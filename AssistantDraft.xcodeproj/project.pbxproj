@@ -1,0 +1,1060 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0492D8B54E666602D39196F2 /* Pods_AssistantDraft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB04FDF44D56B61CED9C785 /* Pods_AssistantDraft.framework */; };
+		620C5E602322B7A700657E94 /* varFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C5E5E2322B7A700657E94 /* varFormatter.swift */; };
+		620C5E612322B7A700657E94 /* customAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C5E5F2322B7A700657E94 /* customAnnotation.swift */; };
+		622808C32458837400762867 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 622808C22458837400762867 /* GoogleService-Info.plist */; };
+		622808C62458AF5600762867 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622808C52458AF5600762867 /* TeamViewController.swift */; };
+		6236E3BF22DE3BD400E44D56 /* SavedSessionsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236E3BE22DE3BD400E44D56 /* SavedSessionsDetailsViewController.swift */; };
+		6236E3C422DE3D7900E44D56 /* SaveSessionPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236E3C322DE3D7900E44D56 /* SaveSessionPageViewController.swift */; };
+		62523EEF22EB49A7007FE683 /* ResultsPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62523EEE22EB49A7007FE683 /* ResultsPopUpViewController.swift */; };
+		62656496246472F500596C61 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62656484246472F300596C61 /* Location+CoreDataClass.swift */; };
+		62656497246472F500596C61 /* SeatRaceBoat+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6265648B246472F400596C61 /* SeatRaceBoat+CoreDataClass.swift */; };
+		62656498246472F500596C61 /* Piece+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62656486246472F300596C61 /* Piece+CoreDataClass.swift */; };
+		62656499246472F500596C61 /* TrainingSession+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62656493246472F500596C61 /* TrainingSession+CoreDataClass.swift */; };
+		6265649A246472F500596C61 /* Rower+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6265648F246472F400596C61 /* Rower+CoreDataProperties.swift */; };
+		6265649B246472F500596C61 /* Piece+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62656487246472F300596C61 /* Piece+CoreDataProperties.swift */; };
+		6265649C246472F500596C61 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6265648A246472F400596C61 /* Location+CoreDataProperties.swift */; };
+		6265649D246472F500596C61 /* Boat+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62656485246472F300596C61 /* Boat+CoreDataClass.swift */; };
+		6265649E246472F500596C61 /* Rower+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62656481246472F300596C61 /* Rower+CoreDataClass.swift */; };
+		6265649F246472F500596C61 /* BoatTimes+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62656489246472F300596C61 /* BoatTimes+CoreDataClass.swift */; };
+		626564A0246472F500596C61 /* BoatTimes+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62656491246472F400596C61 /* BoatTimes+CoreDataProperties.swift */; };
+		626564A1246472F500596C61 /* Race+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62656488246472F300596C61 /* Race+CoreDataClass.swift */; };
+		626564A2246472F500596C61 /* SeatRaceTime+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62656482246472F300596C61 /* SeatRaceTime+CoreDataProperties.swift */; };
+		626564A3246472F500596C61 /* Rower_Seat+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62656490246472F400596C61 /* Rower_Seat+CoreDataClass.swift */; };
+		626564A4246472F500596C61 /* SeatRace+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62656480246472F300596C61 /* SeatRace+CoreDataClass.swift */; };
+		626564A5246472F500596C61 /* TrainingSession+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62656483246472F300596C61 /* TrainingSession+CoreDataProperties.swift */; };
+		626564A6246472F500596C61 /* Boat+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62656495246472F500596C61 /* Boat+CoreDataProperties.swift */; };
+		626564A7246472F500596C61 /* Race+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62656492246472F400596C61 /* Race+CoreDataProperties.swift */; };
+		626564A8246472F500596C61 /* SeatRaceBoat+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6265648C246472F400596C61 /* SeatRaceBoat+CoreDataProperties.swift */; };
+		626564A9246472F500596C61 /* SeatRace+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6265648D246472F400596C61 /* SeatRace+CoreDataProperties.swift */; };
+		626564AA246472F500596C61 /* SeatRaceTime+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62656494246472F500596C61 /* SeatRaceTime+CoreDataClass.swift */; };
+		626564AB246472F500596C61 /* Rower_Seat+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6265648E246472F400596C61 /* Rower_Seat+CoreDataProperties.swift */; };
+		626F7BA722FB407000C62DCE /* uicolorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7BA622FB407000C62DCE /* uicolorExtension.swift */; };
+		626F7BA922FC14AA00C62DCE /* distanceInfoPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7BA822FC14AA00C62DCE /* distanceInfoPopUpViewController.swift */; };
+		626F7BAB22FC155E00C62DCE /* animationPopUPClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7BAA22FC155E00C62DCE /* animationPopUPClass.swift */; };
+		6281836322E6FB84006B1CE7 /* BoatRacingCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6281836222E6FB84006B1CE7 /* BoatRacingCollectionCell.swift */; };
+		628F2EAC245728EB008159AB /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F2EAB245728EB008159AB /* UIViewExtensions.swift */; };
+		628F2EB0245875BA008159AB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F2EAF245875BA008159AB /* LoginView.swift */; };
+		628F9B2222F57B6400B3DF73 /* SeatRaceRacingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F9B2122F57B6400B3DF73 /* SeatRaceRacingViewController.swift */; };
+		628F9B2422F5865000B3DF73 /* validateTextViewsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F9B2322F5865000B3DF73 /* validateTextViewsHelper.swift */; };
+		6298C47D22E771C500570B73 /* BoatRacingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6298C47C22E771C500570B73 /* BoatRacingViewController.swift */; };
+		62A7C32022D482CE00BAE458 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A7C31F22D482CE00BAE458 /* SplitViewController.swift */; };
+		62A7C32222D5DF3E00BAE458 /* CoachNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A7C32122D5DF3E00BAE458 /* CoachNotesViewController.swift */; };
+		62A7C32422D741AC00BAE458 /* PiecesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A7C32322D741AC00BAE458 /* PiecesViewController.swift */; };
+		62A7C33222D88E2E00BAE458 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A7C33122D88E2E00BAE458 /* CoreDataStack.swift */; };
+		62A7C33722DC86BF00BAE458 /* SavedSessionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A7C33622DC86BF00BAE458 /* SavedSessionsTableViewController.swift */; };
+		62B547B122C8991800B27D07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B547B022C8991800B27D07 /* AppDelegate.swift */; };
+		62B547B622C8991800B27D07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B547B422C8991800B27D07 /* Main.storyboard */; };
+		62B547B922C8991900B27D07 /* AssistantDraft.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62B547B722C8991900B27D07 /* AssistantDraft.xcdatamodeld */; };
+		62B547BB22C8991A00B27D07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B547BA22C8991A00B27D07 /* Assets.xcassets */; };
+		62B547BE22C8991A00B27D07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B547BC22C8991A00B27D07 /* LaunchScreen.storyboard */; };
+		62B547C922C8991B00B27D07 /* AssistantDraftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B547C822C8991B00B27D07 /* AssistantDraftUITests.swift */; };
+		62C78EAB231673420053A149 /* SeatRaceHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C78EAA231673420053A149 /* SeatRaceHomeViewController.swift */; };
+		62C78EAE2316737C0053A149 /* RaceHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C78EAD2316737C0053A149 /* RaceHomeViewController.swift */; };
+		62C78EB02316739E0053A149 /* parentHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C78EAF2316739E0053A149 /* parentHomeViewController.swift */; };
+		62C78EB2231673AB0053A149 /* TraininSessionHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C78EB1231673AB0053A149 /* TraininSessionHomeViewController.swift */; };
+		62C8FD1C22EEE8EE00974B55 /* RateMonitorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8FD1B22EEE8EE00974B55 /* RateMonitorCollectionViewCell.swift */; };
+		62C8FD1F22F03D6A00974B55 /* InitialSeatRaceCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8FD1E22F03D6A00974B55 /* InitialSeatRaceCreatorViewController.swift */; };
+		62C8FD2122F045A600974B55 /* fillBoatsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8FD2022F045A600974B55 /* fillBoatsPageController.swift */; };
+		62C8FD2322F048A300974B55 /* FillBoatsOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8FD2222F048A300974B55 /* FillBoatsOverviewViewController.swift */; };
+		62CB39AF2317BED1003C7F00 /* allBoatInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CB39AE2317BED1003C7F00 /* allBoatInfo.swift */; };
+		62CB39B12317FC43003C7F00 /* HomeViewController2nd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CB39B02317FC43003C7F00 /* HomeViewController2nd.swift */; };
+		62DB050022DF1D4800492E39 /* mapOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DB04FF22DF1D4800492E39 /* mapOverviewViewController.swift */; };
+		62DB050222DF1DB400492E39 /* SaveCoachesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DB050122DF1DB400492E39 /* SaveCoachesViewController.swift */; };
+		62DB050422DF27B400492E39 /* MulticolorPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DB050322DF27B400492E39 /* MulticolorPolyline.swift */; };
+		62DB050622E1EC4A00492E39 /* InitialRaceOverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DB050522E1EC4A00492E39 /* InitialRaceOverviewController.swift */; };
+		62E2833222E4BBE100129726 /* addBoatPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E2833122E4BBE100129726 /* addBoatPopUpViewController.swift */; };
+		62E5F3B923006B2800DB81C3 /* parentSeatRaceBoatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E5F3B823006B2800DB81C3 /* parentSeatRaceBoatViewController.swift */; };
+		62E5F3BD2301503300DB81C3 /* SwapRowersPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E5F3BC2301503300DB81C3 /* SwapRowersPopUpViewController.swift */; };
+		62E5F3BF230150D300DB81C3 /* swapRowersPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E5F3BE230150D300DB81C3 /* swapRowersPageController.swift */; };
+		62E5F3C22302960B00DB81C3 /* swapRowersParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E5F3C12302960B00DB81C3 /* swapRowersParentViewController.swift */; };
+		62E5F3C42302996200DB81C3 /* EightSwapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E5F3C32302996200DB81C3 /* EightSwapViewController.swift */; };
+		62E5F3CE23029A0200DB81C3 /* CoxlessFourSwapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E5F3CD23029A0200DB81C3 /* CoxlessFourSwapViewController.swift */; };
+		62E5F3D023029A1800DB81C3 /* CoxedFourSwapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E5F3CF23029A1800DB81C3 /* CoxedFourSwapViewController.swift */; };
+		62E5F3D223029A2F00DB81C3 /* PairSwapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E5F3D123029A2F00DB81C3 /* PairSwapViewController.swift */; };
+		62E5F3D423029A4900DB81C3 /* SingleSwapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E5F3D323029A4900DB81C3 /* SingleSwapViewController.swift */; };
+		62E5F3D62307EC9700DB81C3 /* SeatRacingResultsPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E5F3D52307EC9700DB81C3 /* SeatRacingResultsPopUpViewController.swift */; };
+		62E5F3D82309587200DB81C3 /* CrewListPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E5F3D72309587200DB81C3 /* CrewListPopUpViewController.swift */; };
+		62E5F3DA2309903A00DB81C3 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E5F3D92309903A00DB81C3 /* NavController.swift */; };
+		62EE7B3D22CA50360024A16F /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EE7B3C22CA50360024A16F /* PageViewController.swift */; };
+		62EE7B3F22CB62B90024A16F /* sessionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EE7B3E22CB62B90024A16F /* sessionDetails.swift */; };
+		62EE7B4122CDE1AF0024A16F /* TrainingSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EE7B4022CDE1AF0024A16F /* TrainingSessionViewController.swift */; };
+		62EE7B5122CDF04B0024A16F /* locationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EE7B5022CDF04B0024A16F /* locationManager.swift */; };
+		62EE7B5522CDF3730024A16F /* unitCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EE7B5422CDF3730024A16F /* unitCalculations.swift */; };
+		62F6916622F1A46D003CEDC5 /* EightFillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6916522F1A46D003CEDC5 /* EightFillViewController.swift */; };
+		62F6916822F1A542003CEDC5 /* CoxedFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6916722F1A542003CEDC5 /* CoxedFourViewController.swift */; };
+		62F6916A22F1A58B003CEDC5 /* CoxlessFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6916922F1A58B003CEDC5 /* CoxlessFourViewController.swift */; };
+		62F6916C22F1A5FB003CEDC5 /* PairFillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6916B22F1A5FB003CEDC5 /* PairFillViewController.swift */; };
+		62F6916F22F1A66B003CEDC5 /* SingleFillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6916E22F1A66B003CEDC5 /* SingleFillViewController.swift */; };
+		FD740BFC915734997BAD0628 /* Pods_AssistantDraft_AssistantDraftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 811FDED226F40A6C900B64CF /* Pods_AssistantDraft_AssistantDraftUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62B547C522C8991B00B27D07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62B547A522C8991800B27D07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62B547AC22C8991800B27D07;
+			remoteInfo = AssistantDraft;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B186C9C0E467339DD24D2F2 /* Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig"; path = "Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		59B224E9114B78A139BD1830 /* Pods-AssistantDraft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssistantDraft.release.xcconfig"; path = "Target Support Files/Pods-AssistantDraft/Pods-AssistantDraft.release.xcconfig"; sourceTree = "<group>"; };
+		620C5E5E2322B7A700657E94 /* varFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = varFormatter.swift; sourceTree = "<group>"; };
+		620C5E5F2322B7A700657E94 /* customAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customAnnotation.swift; sourceTree = "<group>"; };
+		622808C22458837400762867 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		622808C42458884F00762867 /* AssistantDraft.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AssistantDraft.entitlements; sourceTree = "<group>"; };
+		622808C52458AF5600762867 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		6236E3BE22DE3BD400E44D56 /* SavedSessionsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSessionsDetailsViewController.swift; sourceTree = "<group>"; };
+		6236E3C322DE3D7900E44D56 /* SaveSessionPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveSessionPageViewController.swift; sourceTree = "<group>"; };
+		62523EEE22EB49A7007FE683 /* ResultsPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPopUpViewController.swift; sourceTree = "<group>"; };
+		62656480246472F300596C61 /* SeatRace+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SeatRace+CoreDataClass.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/SeatRace+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		62656481246472F300596C61 /* Rower+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Rower+CoreDataClass.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/Rower+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		62656482246472F300596C61 /* SeatRaceTime+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SeatRaceTime+CoreDataProperties.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/SeatRaceTime+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		62656483246472F300596C61 /* TrainingSession+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TrainingSession+CoreDataProperties.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/TrainingSession+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		62656484246472F300596C61 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Location+CoreDataClass.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/Location+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		62656485246472F300596C61 /* Boat+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Boat+CoreDataClass.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/Boat+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		62656486246472F300596C61 /* Piece+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Piece+CoreDataClass.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/Piece+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		62656487246472F300596C61 /* Piece+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Piece+CoreDataProperties.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/Piece+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		62656488246472F300596C61 /* Race+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Race+CoreDataClass.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/Race+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		62656489246472F300596C61 /* BoatTimes+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BoatTimes+CoreDataClass.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/BoatTimes+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		6265648A246472F400596C61 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Location+CoreDataProperties.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/Location+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		6265648B246472F400596C61 /* SeatRaceBoat+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SeatRaceBoat+CoreDataClass.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/SeatRaceBoat+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		6265648C246472F400596C61 /* SeatRaceBoat+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SeatRaceBoat+CoreDataProperties.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/SeatRaceBoat+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		6265648D246472F400596C61 /* SeatRace+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SeatRace+CoreDataProperties.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/SeatRace+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		6265648E246472F400596C61 /* Rower_Seat+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Rower_Seat+CoreDataProperties.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/Rower_Seat+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		6265648F246472F400596C61 /* Rower+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Rower+CoreDataProperties.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/Rower+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		62656490246472F400596C61 /* Rower_Seat+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Rower_Seat+CoreDataClass.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/Rower_Seat+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		62656491246472F400596C61 /* BoatTimes+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BoatTimes+CoreDataProperties.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/BoatTimes+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		62656492246472F400596C61 /* Race+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Race+CoreDataProperties.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/Race+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		62656493246472F500596C61 /* TrainingSession+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TrainingSession+CoreDataClass.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/TrainingSession+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		62656494246472F500596C61 /* SeatRaceTime+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SeatRaceTime+CoreDataClass.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/SeatRaceTime+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		62656495246472F500596C61 /* Boat+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Boat+CoreDataProperties.swift"; path = "/Users/nicholasmayhew/Documents/AppRowSmart/AssistantDraft/AssistantDraft/CoreData/Boat+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		626F7BA622FB407000C62DCE /* uicolorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uicolorExtension.swift; sourceTree = "<group>"; };
+		626F7BA822FC14AA00C62DCE /* distanceInfoPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = distanceInfoPopUpViewController.swift; sourceTree = "<group>"; };
+		626F7BAA22FC155E00C62DCE /* animationPopUPClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animationPopUPClass.swift; sourceTree = "<group>"; };
+		6281836222E6FB84006B1CE7 /* BoatRacingCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatRacingCollectionCell.swift; sourceTree = "<group>"; };
+		628F2EAB245728EB008159AB /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		628F2EAF245875BA008159AB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		628F9B2122F57B6400B3DF73 /* SeatRaceRacingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatRaceRacingViewController.swift; sourceTree = "<group>"; };
+		628F9B2322F5865000B3DF73 /* validateTextViewsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = validateTextViewsHelper.swift; sourceTree = "<group>"; };
+		6298C47C22E771C500570B73 /* BoatRacingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatRacingViewController.swift; sourceTree = "<group>"; };
+		62A7C31F22D482CE00BAE458 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		62A7C32122D5DF3E00BAE458 /* CoachNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachNotesViewController.swift; sourceTree = "<group>"; };
+		62A7C32322D741AC00BAE458 /* PiecesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiecesViewController.swift; sourceTree = "<group>"; };
+		62A7C33122D88E2E00BAE458 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		62A7C33622DC86BF00BAE458 /* SavedSessionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSessionsTableViewController.swift; sourceTree = "<group>"; };
+		62B547AD22C8991800B27D07 /* AssistantDraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssistantDraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B547B022C8991800B27D07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62B547B522C8991800B27D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62B547B822C8991900B27D07 /* AssistantDraft.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AssistantDraft.xcdatamodel; sourceTree = "<group>"; };
+		62B547BA22C8991A00B27D07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62B547BD22C8991A00B27D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		62B547BF22C8991A00B27D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62B547C422C8991B00B27D07 /* AssistantDraftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssistantDraftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B547C822C8991B00B27D07 /* AssistantDraftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantDraftUITests.swift; sourceTree = "<group>"; };
+		62B547CA22C8991B00B27D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62C78EAA231673420053A149 /* SeatRaceHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatRaceHomeViewController.swift; sourceTree = "<group>"; };
+		62C78EAD2316737C0053A149 /* RaceHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceHomeViewController.swift; sourceTree = "<group>"; };
+		62C78EAF2316739E0053A149 /* parentHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parentHomeViewController.swift; sourceTree = "<group>"; };
+		62C78EB1231673AB0053A149 /* TraininSessionHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraininSessionHomeViewController.swift; sourceTree = "<group>"; };
+		62C8FD1B22EEE8EE00974B55 /* RateMonitorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateMonitorCollectionViewCell.swift; sourceTree = "<group>"; };
+		62C8FD1E22F03D6A00974B55 /* InitialSeatRaceCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InitialSeatRaceCreatorViewController.swift; path = AssistantDraft/ViewControllers/SeatRacing/InitialSeatRaceCreatorViewController.swift; sourceTree = SOURCE_ROOT; };
+		62C8FD2022F045A600974B55 /* fillBoatsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fillBoatsPageController.swift; sourceTree = "<group>"; };
+		62C8FD2222F048A300974B55 /* FillBoatsOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillBoatsOverviewViewController.swift; sourceTree = "<group>"; };
+		62CB39AE2317BED1003C7F00 /* allBoatInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allBoatInfo.swift; sourceTree = "<group>"; };
+		62CB39B02317FC43003C7F00 /* HomeViewController2nd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController2nd.swift; sourceTree = "<group>"; };
+		62DB04FF22DF1D4800492E39 /* mapOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapOverviewViewController.swift; sourceTree = "<group>"; };
+		62DB050122DF1DB400492E39 /* SaveCoachesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCoachesViewController.swift; sourceTree = "<group>"; };
+		62DB050322DF27B400492E39 /* MulticolorPolyline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticolorPolyline.swift; sourceTree = "<group>"; };
+		62DB050522E1EC4A00492E39 /* InitialRaceOverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InitialRaceOverviewController.swift; path = ../../CoreData/InitialRaceOverviewController.swift; sourceTree = "<group>"; };
+		62E2833122E4BBE100129726 /* addBoatPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addBoatPopUpViewController.swift; sourceTree = "<group>"; };
+		62E5F3B823006B2800DB81C3 /* parentSeatRaceBoatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parentSeatRaceBoatViewController.swift; sourceTree = "<group>"; };
+		62E5F3BC2301503300DB81C3 /* SwapRowersPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapRowersPopUpViewController.swift; sourceTree = "<group>"; };
+		62E5F3BE230150D300DB81C3 /* swapRowersPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swapRowersPageController.swift; sourceTree = "<group>"; };
+		62E5F3C12302960B00DB81C3 /* swapRowersParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swapRowersParentViewController.swift; sourceTree = "<group>"; };
+		62E5F3C32302996200DB81C3 /* EightSwapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightSwapViewController.swift; sourceTree = "<group>"; };
+		62E5F3CD23029A0200DB81C3 /* CoxlessFourSwapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoxlessFourSwapViewController.swift; sourceTree = "<group>"; };
+		62E5F3CF23029A1800DB81C3 /* CoxedFourSwapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoxedFourSwapViewController.swift; sourceTree = "<group>"; };
+		62E5F3D123029A2F00DB81C3 /* PairSwapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairSwapViewController.swift; sourceTree = "<group>"; };
+		62E5F3D323029A4900DB81C3 /* SingleSwapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSwapViewController.swift; sourceTree = "<group>"; };
+		62E5F3D52307EC9700DB81C3 /* SeatRacingResultsPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatRacingResultsPopUpViewController.swift; sourceTree = "<group>"; };
+		62E5F3D72309587200DB81C3 /* CrewListPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewListPopUpViewController.swift; sourceTree = "<group>"; };
+		62E5F3D92309903A00DB81C3 /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
+		62EE7B3C22CA50360024A16F /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		62EE7B3E22CB62B90024A16F /* sessionDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sessionDetails.swift; sourceTree = "<group>"; };
+		62EE7B4022CDE1AF0024A16F /* TrainingSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingSessionViewController.swift; sourceTree = "<group>"; };
+		62EE7B5022CDF04B0024A16F /* locationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = locationManager.swift; path = AssistantDraft/HelperFiles/locationManager.swift; sourceTree = SOURCE_ROOT; };
+		62EE7B5422CDF3730024A16F /* unitCalculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unitCalculations.swift; sourceTree = "<group>"; };
+		62F6916522F1A46D003CEDC5 /* EightFillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightFillViewController.swift; sourceTree = "<group>"; };
+		62F6916722F1A542003CEDC5 /* CoxedFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoxedFourViewController.swift; sourceTree = "<group>"; };
+		62F6916922F1A58B003CEDC5 /* CoxlessFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoxlessFourViewController.swift; sourceTree = "<group>"; };
+		62F6916B22F1A5FB003CEDC5 /* PairFillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairFillViewController.swift; sourceTree = "<group>"; };
+		62F6916E22F1A66B003CEDC5 /* SingleFillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFillViewController.swift; sourceTree = "<group>"; };
+		7FB04FDF44D56B61CED9C785 /* Pods_AssistantDraft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssistantDraft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		811FDED226F40A6C900B64CF /* Pods_AssistantDraft_AssistantDraftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssistantDraft_AssistantDraftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9112E3CBE45A03EFF16277 /* Pods-AssistantDraft-AssistantDraftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssistantDraft-AssistantDraftUITests.release.xcconfig"; path = "Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		97559A090BCA2BED63D34DEA /* Pods-AssistantDraft.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssistantDraft.debug.xcconfig"; path = "Target Support Files/Pods-AssistantDraft/Pods-AssistantDraft.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62B547AA22C8991800B27D07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0492D8B54E666602D39196F2 /* Pods_AssistantDraft.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B547C122C8991B00B27D07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD740BFC915734997BAD0628 /* Pods_AssistantDraft_AssistantDraftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6236E3C122DE3BF900E44D56 /* SavedViews */ = {
+			isa = PBXGroup;
+			children = (
+				62A7C33622DC86BF00BAE458 /* SavedSessionsTableViewController.swift */,
+				6236E3BE22DE3BD400E44D56 /* SavedSessionsDetailsViewController.swift */,
+				62DB04FF22DF1D4800492E39 /* mapOverviewViewController.swift */,
+				62DB050122DF1DB400492E39 /* SaveCoachesViewController.swift */,
+				6236E3C322DE3D7900E44D56 /* SaveSessionPageViewController.swift */,
+			);
+			path = SavedViews;
+			sourceTree = "<group>";
+		};
+		6236E3C222DE3C2000E44D56 /* TrainingSession */ = {
+			isa = PBXGroup;
+			children = (
+				62EE7B4022CDE1AF0024A16F /* TrainingSessionViewController.swift */,
+				62A7C31F22D482CE00BAE458 /* SplitViewController.swift */,
+				62A7C32122D5DF3E00BAE458 /* CoachNotesViewController.swift */,
+				62A7C32322D741AC00BAE458 /* PiecesViewController.swift */,
+				62EE7B3C22CA50360024A16F /* PageViewController.swift */,
+				62EE7B3E22CB62B90024A16F /* sessionDetails.swift */,
+			);
+			path = TrainingSession;
+			sourceTree = "<group>";
+		};
+		626F7BA322FB37C700C62DCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FB04FDF44D56B61CED9C785 /* Pods_AssistantDraft.framework */,
+				811FDED226F40A6C900B64CF /* Pods_AssistantDraft_AssistantDraftUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62A7C33522D9DE5000BAE458 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				62656488246472F300596C61 /* Race+CoreDataClass.swift */,
+				62656492246472F400596C61 /* Race+CoreDataProperties.swift */,
+				62656493246472F500596C61 /* TrainingSession+CoreDataClass.swift */,
+				62656486246472F300596C61 /* Piece+CoreDataClass.swift */,
+				62656487246472F300596C61 /* Piece+CoreDataProperties.swift */,
+				62656483246472F300596C61 /* TrainingSession+CoreDataProperties.swift */,
+				62656489246472F300596C61 /* BoatTimes+CoreDataClass.swift */,
+				62656491246472F400596C61 /* BoatTimes+CoreDataProperties.swift */,
+				62656484246472F300596C61 /* Location+CoreDataClass.swift */,
+				6265648A246472F400596C61 /* Location+CoreDataProperties.swift */,
+				62656485246472F300596C61 /* Boat+CoreDataClass.swift */,
+				62656495246472F500596C61 /* Boat+CoreDataProperties.swift */,
+				62656481246472F300596C61 /* Rower+CoreDataClass.swift */,
+				6265648F246472F400596C61 /* Rower+CoreDataProperties.swift */,
+				6265648B246472F400596C61 /* SeatRaceBoat+CoreDataClass.swift */,
+				6265648C246472F400596C61 /* SeatRaceBoat+CoreDataProperties.swift */,
+				62656480246472F300596C61 /* SeatRace+CoreDataClass.swift */,
+				6265648D246472F400596C61 /* SeatRace+CoreDataProperties.swift */,
+				62656490246472F400596C61 /* Rower_Seat+CoreDataClass.swift */,
+				6265648E246472F400596C61 /* Rower_Seat+CoreDataProperties.swift */,
+				62656494246472F500596C61 /* SeatRaceTime+CoreDataClass.swift */,
+				62656482246472F300596C61 /* SeatRaceTime+CoreDataProperties.swift */,
+				62A7C33122D88E2E00BAE458 /* CoreDataStack.swift */,
+				62B547B722C8991900B27D07 /* AssistantDraft.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		62B547A422C8991800B27D07 = {
+			isa = PBXGroup;
+			children = (
+				62B547AF22C8991800B27D07 /* AssistantDraft */,
+				62B547C722C8991B00B27D07 /* AssistantDraftUITests */,
+				62B547AE22C8991800B27D07 /* Products */,
+				626F7BA322FB37C700C62DCE /* Frameworks */,
+				86BDA356359195AA96A34223 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		62B547AE22C8991800B27D07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62B547AD22C8991800B27D07 /* AssistantDraft.app */,
+				62B547C422C8991B00B27D07 /* AssistantDraftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62B547AF22C8991800B27D07 /* AssistantDraft */ = {
+			isa = PBXGroup;
+			children = (
+				622808C42458884F00762867 /* AssistantDraft.entitlements */,
+				62EE7B4322CDE9D90024A16F /* ViewControllers */,
+				62A7C33522D9DE5000BAE458 /* CoreData */,
+				62EE7B5722CDF38C0024A16F /* HelperFiles */,
+				62B547B022C8991800B27D07 /* AppDelegate.swift */,
+				62B547B422C8991800B27D07 /* Main.storyboard */,
+				62B547BC22C8991A00B27D07 /* LaunchScreen.storyboard */,
+				62B547BA22C8991A00B27D07 /* Assets.xcassets */,
+				62B547BF22C8991A00B27D07 /* Info.plist */,
+				622808C22458837400762867 /* GoogleService-Info.plist */,
+			);
+			path = AssistantDraft;
+			sourceTree = "<group>";
+		};
+		62B547C722C8991B00B27D07 /* AssistantDraftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				62B547C822C8991B00B27D07 /* AssistantDraftUITests.swift */,
+				62B547CA22C8991B00B27D07 /* Info.plist */,
+			);
+			path = AssistantDraftUITests;
+			sourceTree = "<group>";
+		};
+		62C78EAC2316735D0053A149 /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				622808C52458AF5600762867 /* TeamViewController.swift */,
+				62E5F3D92309903A00DB81C3 /* NavController.swift */,
+				62CB39B02317FC43003C7F00 /* HomeViewController2nd.swift */,
+				62C78EAF2316739E0053A149 /* parentHomeViewController.swift */,
+				62C78EAA231673420053A149 /* SeatRaceHomeViewController.swift */,
+				62C78EAD2316737C0053A149 /* RaceHomeViewController.swift */,
+				62C78EB1231673AB0053A149 /* TraininSessionHomeViewController.swift */,
+			);
+			path = HomeViews;
+			sourceTree = "<group>";
+		};
+		62C8FD1D22F039EF00974B55 /* SeatRacing */ = {
+			isa = PBXGroup;
+			children = (
+				62E5F3D52307EC9700DB81C3 /* SeatRacingResultsPopUpViewController.swift */,
+				62E5F3D72309587200DB81C3 /* CrewListPopUpViewController.swift */,
+				62E5F3BC2301503300DB81C3 /* SwapRowersPopUpViewController.swift */,
+				62E5F3BE230150D300DB81C3 /* swapRowersPageController.swift */,
+				62E5F3C0230295DC00DB81C3 /* swapRowerViews */,
+				62F6916D22F1A609003CEDC5 /* FillSubViews */,
+				62C8FD2022F045A600974B55 /* fillBoatsPageController.swift */,
+				628F9B2122F57B6400B3DF73 /* SeatRaceRacingViewController.swift */,
+				62C8FD2222F048A300974B55 /* FillBoatsOverviewViewController.swift */,
+				62C8FD1E22F03D6A00974B55 /* InitialSeatRaceCreatorViewController.swift */,
+			);
+			path = SeatRacing;
+			sourceTree = "<group>";
+		};
+		62DB050822E1EC7100492E39 /* Race */ = {
+			isa = PBXGroup;
+			children = (
+				62CB39AE2317BED1003C7F00 /* allBoatInfo.swift */,
+				62C8FD1B22EEE8EE00974B55 /* RateMonitorCollectionViewCell.swift */,
+				62523EEE22EB49A7007FE683 /* ResultsPopUpViewController.swift */,
+				6298C47C22E771C500570B73 /* BoatRacingViewController.swift */,
+				6281836222E6FB84006B1CE7 /* BoatRacingCollectionCell.swift */,
+				62DB050522E1EC4A00492E39 /* InitialRaceOverviewController.swift */,
+				62E2833122E4BBE100129726 /* addBoatPopUpViewController.swift */,
+				626F7BA822FC14AA00C62DCE /* distanceInfoPopUpViewController.swift */,
+			);
+			path = Race;
+			sourceTree = "<group>";
+		};
+		62E5F3C0230295DC00DB81C3 /* swapRowerViews */ = {
+			isa = PBXGroup;
+			children = (
+				62E5F3C12302960B00DB81C3 /* swapRowersParentViewController.swift */,
+				62E5F3D323029A4900DB81C3 /* SingleSwapViewController.swift */,
+				62E5F3D123029A2F00DB81C3 /* PairSwapViewController.swift */,
+				62E5F3CD23029A0200DB81C3 /* CoxlessFourSwapViewController.swift */,
+				62E5F3CF23029A1800DB81C3 /* CoxedFourSwapViewController.swift */,
+				62E5F3C32302996200DB81C3 /* EightSwapViewController.swift */,
+			);
+			path = swapRowerViews;
+			sourceTree = "<group>";
+		};
+		62EE7B4322CDE9D90024A16F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				62C78EAC2316735D0053A149 /* HomeViews */,
+				62C8FD1D22F039EF00974B55 /* SeatRacing */,
+				62DB050822E1EC7100492E39 /* Race */,
+				6236E3C222DE3C2000E44D56 /* TrainingSession */,
+				6236E3C122DE3BF900E44D56 /* SavedViews */,
+				628F2EAF245875BA008159AB /* LoginView.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		62EE7B5722CDF38C0024A16F /* HelperFiles */ = {
+			isa = PBXGroup;
+			children = (
+				62EE7B5022CDF04B0024A16F /* locationManager.swift */,
+				628F2EAB245728EB008159AB /* UIViewExtensions.swift */,
+				620C5E5F2322B7A700657E94 /* customAnnotation.swift */,
+				620C5E5E2322B7A700657E94 /* varFormatter.swift */,
+				62EE7B5422CDF3730024A16F /* unitCalculations.swift */,
+				62DB050322DF27B400492E39 /* MulticolorPolyline.swift */,
+				626F7BA622FB407000C62DCE /* uicolorExtension.swift */,
+				626F7BAA22FC155E00C62DCE /* animationPopUPClass.swift */,
+			);
+			path = HelperFiles;
+			sourceTree = "<group>";
+		};
+		62F6916D22F1A609003CEDC5 /* FillSubViews */ = {
+			isa = PBXGroup;
+			children = (
+				628F9B2322F5865000B3DF73 /* validateTextViewsHelper.swift */,
+				62E5F3B823006B2800DB81C3 /* parentSeatRaceBoatViewController.swift */,
+				62F6916E22F1A66B003CEDC5 /* SingleFillViewController.swift */,
+				62F6916B22F1A5FB003CEDC5 /* PairFillViewController.swift */,
+				62F6916922F1A58B003CEDC5 /* CoxlessFourViewController.swift */,
+				62F6916722F1A542003CEDC5 /* CoxedFourViewController.swift */,
+				62F6916522F1A46D003CEDC5 /* EightFillViewController.swift */,
+			);
+			path = FillSubViews;
+			sourceTree = "<group>";
+		};
+		86BDA356359195AA96A34223 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97559A090BCA2BED63D34DEA /* Pods-AssistantDraft.debug.xcconfig */,
+				59B224E9114B78A139BD1830 /* Pods-AssistantDraft.release.xcconfig */,
+				3B186C9C0E467339DD24D2F2 /* Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig */,
+				8B9112E3CBE45A03EFF16277 /* Pods-AssistantDraft-AssistantDraftUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62B547AC22C8991800B27D07 /* AssistantDraft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62B547CD22C8991B00B27D07 /* Build configuration list for PBXNativeTarget "AssistantDraft" */;
+			buildPhases = (
+				C302A9BD3D8B2C33D4ABA62D /* [CP] Check Pods Manifest.lock */,
+				62B547A922C8991800B27D07 /* Sources */,
+				62B547AA22C8991800B27D07 /* Frameworks */,
+				62B547AB22C8991800B27D07 /* Resources */,
+				ADEC5BC833F5ED50EAC4F621 /* [CP] Embed Pods Frameworks */,
+				71554839F0AF40EE998F6A04 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AssistantDraft;
+			productName = AssistantDraft;
+			productReference = 62B547AD22C8991800B27D07 /* AssistantDraft.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62B547C322C8991B00B27D07 /* AssistantDraftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62B547D022C8991B00B27D07 /* Build configuration list for PBXNativeTarget "AssistantDraftUITests" */;
+			buildPhases = (
+				9D7A727BC3AD9C772060438E /* [CP] Check Pods Manifest.lock */,
+				62B547C022C8991B00B27D07 /* Sources */,
+				62B547C122C8991B00B27D07 /* Frameworks */,
+				62B547C222C8991B00B27D07 /* Resources */,
+				F476A6451C106BA745A14ACC /* [CP] Embed Pods Frameworks */,
+				B3D72EF3F6666CDFDA25DD19 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62B547C622C8991B00B27D07 /* PBXTargetDependency */,
+			);
+			name = AssistantDraftUITests;
+			productName = AssistantDraftUITests;
+			productReference = 62B547C422C8991B00B27D07 /* AssistantDraftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62B547A522C8991800B27D07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = Mayhew;
+				TargetAttributes = {
+					62B547AC22C8991800B27D07 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					62B547C322C8991B00B27D07 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 62B547AC22C8991800B27D07;
+					};
+				};
+			};
+			buildConfigurationList = 62B547A822C8991800B27D07 /* Build configuration list for PBXProject "AssistantDraft" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62B547A422C8991800B27D07;
+			productRefGroup = 62B547AE22C8991800B27D07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62B547AC22C8991800B27D07 /* AssistantDraft */,
+				62B547C322C8991B00B27D07 /* AssistantDraftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62B547AB22C8991800B27D07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62B547BE22C8991A00B27D07 /* LaunchScreen.storyboard in Resources */,
+				62B547BB22C8991A00B27D07 /* Assets.xcassets in Resources */,
+				62B547B622C8991800B27D07 /* Main.storyboard in Resources */,
+				622808C32458837400762867 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B547C222C8991B00B27D07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71554839F0AF40EE998F6A04 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft/Pods-AssistantDraft-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft/Pods-AssistantDraft-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft/Pods-AssistantDraft-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D7A727BC3AD9C772060438E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AssistantDraft-AssistantDraftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADEC5BC833F5ED50EAC4F621 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft/Pods-AssistantDraft-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft/Pods-AssistantDraft-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft/Pods-AssistantDraft-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3D72EF3F6666CDFDA25DD19 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C302A9BD3D8B2C33D4ABA62D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AssistantDraft-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F476A6451C106BA745A14ACC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62B547A922C8991800B27D07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				626F7BAB22FC155E00C62DCE /* animationPopUPClass.swift in Sources */,
+				62C78EB02316739E0053A149 /* parentHomeViewController.swift in Sources */,
+				6265649C246472F500596C61 /* Location+CoreDataProperties.swift in Sources */,
+				6236E3BF22DE3BD400E44D56 /* SavedSessionsDetailsViewController.swift in Sources */,
+				62656497246472F500596C61 /* SeatRaceBoat+CoreDataClass.swift in Sources */,
+				62C8FD2122F045A600974B55 /* fillBoatsPageController.swift in Sources */,
+				62E5F3D023029A1800DB81C3 /* CoxedFourSwapViewController.swift in Sources */,
+				62E5F3D423029A4900DB81C3 /* SingleSwapViewController.swift in Sources */,
+				62B547B122C8991800B27D07 /* AppDelegate.swift in Sources */,
+				62F6916A22F1A58B003CEDC5 /* CoxlessFourViewController.swift in Sources */,
+				626564A2246472F500596C61 /* SeatRaceTime+CoreDataProperties.swift in Sources */,
+				62B547B922C8991900B27D07 /* AssistantDraft.xcdatamodeld in Sources */,
+				62C78EAB231673420053A149 /* SeatRaceHomeViewController.swift in Sources */,
+				628F2EAC245728EB008159AB /* UIViewExtensions.swift in Sources */,
+				62EE7B3D22CA50360024A16F /* PageViewController.swift in Sources */,
+				626F7BA922FC14AA00C62DCE /* distanceInfoPopUpViewController.swift in Sources */,
+				626F7BA722FB407000C62DCE /* uicolorExtension.swift in Sources */,
+				62E5F3BF230150D300DB81C3 /* swapRowersPageController.swift in Sources */,
+				62E5F3C42302996200DB81C3 /* EightSwapViewController.swift in Sources */,
+				62F6916822F1A542003CEDC5 /* CoxedFourViewController.swift in Sources */,
+				62C8FD2322F048A300974B55 /* FillBoatsOverviewViewController.swift in Sources */,
+				62E5F3C22302960B00DB81C3 /* swapRowersParentViewController.swift in Sources */,
+				620C5E612322B7A700657E94 /* customAnnotation.swift in Sources */,
+				6265649F246472F500596C61 /* BoatTimes+CoreDataClass.swift in Sources */,
+				6236E3C422DE3D7900E44D56 /* SaveSessionPageViewController.swift in Sources */,
+				6281836322E6FB84006B1CE7 /* BoatRacingCollectionCell.swift in Sources */,
+				62E5F3D223029A2F00DB81C3 /* PairSwapViewController.swift in Sources */,
+				62EE7B5522CDF3730024A16F /* unitCalculations.swift in Sources */,
+				62E5F3D82309587200DB81C3 /* CrewListPopUpViewController.swift in Sources */,
+				626564A0246472F500596C61 /* BoatTimes+CoreDataProperties.swift in Sources */,
+				6265649E246472F500596C61 /* Rower+CoreDataClass.swift in Sources */,
+				62DB050022DF1D4800492E39 /* mapOverviewViewController.swift in Sources */,
+				6265649D246472F500596C61 /* Boat+CoreDataClass.swift in Sources */,
+				62C78EB2231673AB0053A149 /* TraininSessionHomeViewController.swift in Sources */,
+				62F6916F22F1A66B003CEDC5 /* SingleFillViewController.swift in Sources */,
+				62F6916622F1A46D003CEDC5 /* EightFillViewController.swift in Sources */,
+				62A7C32422D741AC00BAE458 /* PiecesViewController.swift in Sources */,
+				628F2EB0245875BA008159AB /* LoginView.swift in Sources */,
+				626564A3246472F500596C61 /* Rower_Seat+CoreDataClass.swift in Sources */,
+				62E5F3DA2309903A00DB81C3 /* NavController.swift in Sources */,
+				626564A7246472F500596C61 /* Race+CoreDataProperties.swift in Sources */,
+				62A7C33722DC86BF00BAE458 /* SavedSessionsTableViewController.swift in Sources */,
+				626564A5246472F500596C61 /* TrainingSession+CoreDataProperties.swift in Sources */,
+				626564A1246472F500596C61 /* Race+CoreDataClass.swift in Sources */,
+				620C5E602322B7A700657E94 /* varFormatter.swift in Sources */,
+				6265649A246472F500596C61 /* Rower+CoreDataProperties.swift in Sources */,
+				62C8FD1C22EEE8EE00974B55 /* RateMonitorCollectionViewCell.swift in Sources */,
+				62F6916C22F1A5FB003CEDC5 /* PairFillViewController.swift in Sources */,
+				62A7C33222D88E2E00BAE458 /* CoreDataStack.swift in Sources */,
+				62523EEF22EB49A7007FE683 /* ResultsPopUpViewController.swift in Sources */,
+				62E5F3CE23029A0200DB81C3 /* CoxlessFourSwapViewController.swift in Sources */,
+				62CB39AF2317BED1003C7F00 /* allBoatInfo.swift in Sources */,
+				62A7C32222D5DF3E00BAE458 /* CoachNotesViewController.swift in Sources */,
+				62DB050622E1EC4A00492E39 /* InitialRaceOverviewController.swift in Sources */,
+				62DB050222DF1DB400492E39 /* SaveCoachesViewController.swift in Sources */,
+				626564A8246472F500596C61 /* SeatRaceBoat+CoreDataProperties.swift in Sources */,
+				62E5F3BD2301503300DB81C3 /* SwapRowersPopUpViewController.swift in Sources */,
+				62E5F3D62307EC9700DB81C3 /* SeatRacingResultsPopUpViewController.swift in Sources */,
+				626564AB246472F500596C61 /* Rower_Seat+CoreDataProperties.swift in Sources */,
+				62656498246472F500596C61 /* Piece+CoreDataClass.swift in Sources */,
+				62DB050422DF27B400492E39 /* MulticolorPolyline.swift in Sources */,
+				626564A9246472F500596C61 /* SeatRace+CoreDataProperties.swift in Sources */,
+				62C8FD1F22F03D6A00974B55 /* InitialSeatRaceCreatorViewController.swift in Sources */,
+				62CB39B12317FC43003C7F00 /* HomeViewController2nd.swift in Sources */,
+				62656496246472F500596C61 /* Location+CoreDataClass.swift in Sources */,
+				622808C62458AF5600762867 /* TeamViewController.swift in Sources */,
+				62A7C32022D482CE00BAE458 /* SplitViewController.swift in Sources */,
+				62E2833222E4BBE100129726 /* addBoatPopUpViewController.swift in Sources */,
+				62E5F3B923006B2800DB81C3 /* parentSeatRaceBoatViewController.swift in Sources */,
+				6265649B246472F500596C61 /* Piece+CoreDataProperties.swift in Sources */,
+				626564A4246472F500596C61 /* SeatRace+CoreDataClass.swift in Sources */,
+				62EE7B5122CDF04B0024A16F /* locationManager.swift in Sources */,
+				628F9B2222F57B6400B3DF73 /* SeatRaceRacingViewController.swift in Sources */,
+				62EE7B3F22CB62B90024A16F /* sessionDetails.swift in Sources */,
+				62C78EAE2316737C0053A149 /* RaceHomeViewController.swift in Sources */,
+				6298C47D22E771C500570B73 /* BoatRacingViewController.swift in Sources */,
+				62656499246472F500596C61 /* TrainingSession+CoreDataClass.swift in Sources */,
+				626564AA246472F500596C61 /* SeatRaceTime+CoreDataClass.swift in Sources */,
+				626564A6246472F500596C61 /* Boat+CoreDataProperties.swift in Sources */,
+				628F9B2422F5865000B3DF73 /* validateTextViewsHelper.swift in Sources */,
+				62EE7B4122CDE1AF0024A16F /* TrainingSessionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B547C022C8991B00B27D07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62B547C922C8991B00B27D07 /* AssistantDraftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62B547C622C8991B00B27D07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62B547AC22C8991800B27D07 /* AssistantDraft */;
+			targetProxy = 62B547C522C8991B00B27D07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		62B547B422C8991800B27D07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62B547B522C8991800B27D07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		62B547BC22C8991A00B27D07 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62B547BD22C8991A00B27D07 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62B547CB22C8991B00B27D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62B547CC22C8991B00B27D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62B547CE22C8991B00B27D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97559A090BCA2BED63D34DEA /* Pods-AssistantDraft.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AssistantDraft/AssistantDraft.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = TN4DUPMRCQ;
+				INFOPLIST_FILE = AssistantDraft/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.2.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "IOS-coding.AssistantDraftPrimaryVersion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		62B547CF22C8991B00B27D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B224E9114B78A139BD1830 /* Pods-AssistantDraft.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AssistantDraft/AssistantDraft.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = TN4DUPMRCQ;
+				INFOPLIST_FILE = AssistantDraft/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.2.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "IOS-coding.AssistantDraftPrimaryVersion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		62B547D122C8991B00B27D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B186C9C0E467339DD24D2F2 /* Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6SJVLK5HBQ;
+				INFOPLIST_FILE = AssistantDraftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "IOS-coding.AssistantDraftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AssistantDraft;
+			};
+			name = Debug;
+		};
+		62B547D222C8991B00B27D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B9112E3CBE45A03EFF16277 /* Pods-AssistantDraft-AssistantDraftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6SJVLK5HBQ;
+				INFOPLIST_FILE = AssistantDraftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "IOS-coding.AssistantDraftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AssistantDraft;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62B547A822C8991800B27D07 /* Build configuration list for PBXProject "AssistantDraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62B547CB22C8991B00B27D07 /* Debug */,
+				62B547CC22C8991B00B27D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62B547CD22C8991B00B27D07 /* Build configuration list for PBXNativeTarget "AssistantDraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62B547CE22C8991B00B27D07 /* Debug */,
+				62B547CF22C8991B00B27D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62B547D022C8991B00B27D07 /* Build configuration list for PBXNativeTarget "AssistantDraftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62B547D122C8991B00B27D07 /* Debug */,
+				62B547D222C8991B00B27D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		62B547B722C8991900B27D07 /* AssistantDraft.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				62B547B822C8991900B27D07 /* AssistantDraft.xcdatamodel */,
+			);
+			currentVersion = 62B547B822C8991900B27D07 /* AssistantDraft.xcdatamodel */;
+			path = AssistantDraft.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 62B547A522C8991800B27D07 /* Project object */;
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Boat" representedClassName=".Boat" syncable="YES">
+        <attribute name="boatName" attributeType="String"/>
+        <attribute name="lane" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" attributeType="String"/>
+        <relationship name="boattimes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="BoatTimes" inverseName="boat" inverseEntity="BoatTimes"/>
+        <relationship name="race" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Race" inverseName="boats" inverseEntity="Race"/>
+    </entity>
+    <entity name="BoatTimes" representedClassName=".BoatTimes" syncable="YES">
+        <attribute name="startTime" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="timeDeciSeconds" attributeType="Integer 32" minValueString="0" usesScalarValueType="YES"/>
+        <relationship name="boat" maxCount="1" deletionRule="Cascade" destinationEntity="Boat" inverseName="boattimes" inverseEntity="Boat"/>
+    </entity>
+    <entity name="Location" representedClassName=".Location" syncable="YES">
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="pieceRe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Piece" inverseName="locations" inverseEntity="Piece"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TrainingSession" inverseName="locations" inverseEntity="TrainingSession"/>
+    </entity>
+    <entity name="Piece" representedClassName=".Piece" syncable="YES">
+        <attribute name="distance" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lengthTime" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="pieceNo" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="restTime" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="split" attributeType="String"/>
+        <attribute name="startTime" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="pieceRe" inverseEntity="Location"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TrainingSession" inverseName="pieces" inverseEntity="TrainingSession"/>
+    </entity>
+    <entity name="Race" representedClassName=".Race" syncable="YES">
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="distance" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="boats" toMany="YES" deletionRule="Cascade" destinationEntity="Boat" inverseName="race" inverseEntity="Boat"/>
+    </entity>
+    <entity name="Rower" representedClassName=".Rower" syncable="YES">
+        <attribute name="name" attributeType="String"/>
+        <attribute name="uniqueIdentifier" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="rower_Seat" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Rower_Seat" inverseName="rower" inverseEntity="Rower_Seat"/>
+    </entity>
+    <entity name="Rower_Seat" representedClassName=".Rower_Seat" syncable="YES">
+        <attribute name="seat" attributeType="Integer 16" minValueString="1" maxValueString="10" usesScalarValueType="YES"/>
+        <relationship name="boatRun" maxCount="1" deletionRule="Nullify" destinationEntity="SeatRaceTime" inverseName="lineUp" inverseEntity="SeatRaceTime"/>
+        <relationship name="rower" maxCount="1" deletionRule="Nullify" destinationEntity="Rower" inverseName="rower_Seat" inverseEntity="Rower"/>
+    </entity>
+    <entity name="SeatRace" representedClassName=".SeatRace" syncable="YES">
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="distance" attributeType="Integer 32" minValueString="0" usesScalarValueType="YES"/>
+        <relationship name="boats" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SeatRaceBoat" inverseName="seatRace" inverseEntity="SeatRaceBoat"/>
+    </entity>
+    <entity name="SeatRaceBoat" representedClassName=".SeatRaceBoat" syncable="YES">
+        <attribute name="boatName" attributeType="String"/>
+        <attribute name="lane" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" attributeType="String"/>
+        <attribute name="uniqueIdentifier" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="seatRace" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SeatRace" inverseName="boats" inverseEntity="SeatRace"/>
+        <relationship name="times" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SeatRaceTime" inverseName="boat" inverseEntity="SeatRaceTime"/>
+    </entity>
+    <entity name="SeatRaceTime" representedClassName=".SeatRaceTime" syncable="YES">
+        <attribute name="deciSeconds" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="raceNo" attributeType="Integer 16" minValueString="0" usesScalarValueType="YES"/>
+        <attribute name="uniqueIdentifier" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="boat" maxCount="1" deletionRule="Nullify" destinationEntity="SeatRaceBoat" inverseName="times" inverseEntity="SeatRaceBoat"/>
+        <relationship name="lineUp" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Rower_Seat" inverseName="boatRun" inverseEntity="Rower_Seat"/>
+    </entity>
+    <entity name="TrainingSession" representedClassName=".TrainingSession" syncable="YES">
+        <attribute name="coachNotes" attributeType="String"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="distance" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="duration" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="locations" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Location" inverseName="session" inverseEntity="Location"/>
+        <relationship name="pieces" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Piece" inverseName="session" inverseEntity="Piece"/>
+    </entity>
+    <elements>
+        <element name="Boat" positionX="-1934.23046875" positionY="-457.73046875" width="128" height="118"/>
+        <element name="BoatTimes" positionX="-2144.3984375" positionY="-469.875" width="128" height="88"/>
+        <element name="Location" positionX="-2114" positionY="-839.2734375" width="128" height="118"/>
+        <element name="Piece" positionX="-2145.9375" positionY="-671.20703125" width="128" height="163"/>
+        <element name="Race" positionX="-2178.08203125" positionY="-325.9765625" width="128" height="88"/>
+        <element name="Rower" positionX="-2644.69140625" positionY="-763.8671875" width="128" height="88"/>
+        <element name="Rower_Seat" positionX="-2629.50390625" positionY="-638.8125" width="128" height="88"/>
+        <element name="SeatRace" positionX="-2729.6640625" positionY="-356.2421875" width="128" height="88"/>
+        <element name="SeatRaceBoat" positionX="-2470.89453125" positionY="-396.95703125" width="128" height="133"/>
+        <element name="SeatRaceTime" positionX="-2451.96484375" positionY="-581.5546875" width="128" height="118"/>
+        <element name="TrainingSession" positionX="-1950.93359375" positionY="-812.671875" width="128" height="133"/>
+    </elements>
+</model>
