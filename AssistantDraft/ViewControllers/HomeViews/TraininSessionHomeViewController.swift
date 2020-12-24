@@ -143,7 +143,7 @@ class TraininSessionHomeViewController: parentHomeViewController, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if (trainSesArray.count == 0) {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseID, for: indexPath) as! traininSesHomeCell
-            cell.trainDate.text = "No Training Recorded"
+            cell.trainDate.text = "No Training Sessions Recorded"
             cell.distance.text = "Press + to record a new training session"
             cell.distance.numberOfLines = 2
             cell.distance.textAlignment = .center

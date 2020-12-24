@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+//import Firebase
 
 class NavController: UINavigationController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -20,20 +20,20 @@ class NavController: UINavigationController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        Auth.auth().addStateDidChangeListener() { auth, user in
+        /*Auth.auth().addStateDidChangeListener() { auth, user in
           if user == nil {
             self.popUpLogin()
           }
-        }
+        }*/
         
     }
     
-    func popUpLogin() {
+    /*func popUpLogin() {
         let logInPopOver = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "login") as! loginViewController
         self.addChild(logInPopOver)
         logInPopOver.view.frame = self.view.frame
         
         self.view.addSubview(logInPopOver.view)
         logInPopOver.didMove(toParent: self)
-    }
+    }*/
 }

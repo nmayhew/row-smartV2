@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import Firebase
+//import Firebase
 
 class TeamViewController: UIViewController {
     
@@ -22,17 +22,17 @@ class TeamViewController: UIViewController {
         logOutButton.layer.cornerRadius = 5.0
         passwordChange.layer.cornerRadius = 5.0
         deleteAccount.layer.cornerRadius = 5.0
-        let user = Auth.auth().currentUser
-        teamLabel.text = user?.displayName
-        Auth.auth().addStateDidChangeListener() { auth, user in
+        //let user = Auth.auth().currentUser
+        //teamLabel.text = user?.displayName
+        /*Auth.auth().addStateDidChangeListener() { auth, user in
                  if user != nil {
                     self.teamLabel.text = user?.displayName
                  }
-        }
+        }*/
     }
     
     @IBAction func changePassword(_ sender: Any) {
-        Auth.auth().sendPasswordReset(withEmail: Auth.auth().currentUser!.email!) { error in
+        /*Auth.auth().sendPasswordReset(withEmail: Auth.auth().currentUser!.email!) { error in
             if (error != nil) {
                 let title = "Failed Password Reset"
                 var message = "Failed to reset your password"
@@ -63,11 +63,11 @@ class TeamViewController: UIViewController {
                 }
             }
             
-        }
+        }*/
     }
     
     @IBAction func deleteAccount(_ sender: Any) {
-        let title = "Delete Account"
+        /*let title = "Delete Account"
         let message = "We're sorry to see you go :(. Please confirm"
         let alert = UIAlertController(title: title,message: message, preferredStyle: .alert)
         let delete = UIAlertAction(title: "Confirm", style: .destructive) { _ in
@@ -84,11 +84,11 @@ class TeamViewController: UIViewController {
           try firebaseAuth.signOut()
         } catch let signOutError as NSError {
           print ("Error signing out: %@", signOutError)
-        }
+        }*/
     }
     
     func deleteAccountHelper() {
-        let user = Auth.auth().currentUser
+        /*let user = Auth.auth().currentUser
         user?.delete { error in
             if let error = error {
                 let errorAuthStatus = AuthErrorCode.init(rawValue: error._code)!
@@ -100,11 +100,11 @@ class TeamViewController: UIViewController {
                     self.present(alert, animated: true, completion: nil)
                 }
             } 
-        }
+        }*/
     }
     
     func reauthorise() {
-        let alert = UIAlertController(title: "Authenticate",
+        /*let alert = UIAlertController(title: "Authenticate",
                                       message: "For security reasonse we have to verify your account details",
                                       preferredStyle: .alert)
         let confirmDeletion = UIAlertAction(title: "Confirm", style: .destructive) { _ in
@@ -139,6 +139,6 @@ class TeamViewController: UIViewController {
         alert.addAction(confirmDeletion)
         alert.addAction(cancelAction)
         
-        present(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil)*/
     }
 }

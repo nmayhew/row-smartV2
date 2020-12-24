@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-import Firebase
+//import Firebase
 import GoogleSignIn
 
 @UIApplicationMain
@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let locationManager = LocationManager.shared
         locationManager.requestWhenInUseAuthorization()
         UITextField.appearance().tintColor = .lightGray
-        FirebaseApp.configure()
+        //FirebaseApp.configure()
         return true
     }
     func applicationWillResignActive(_ application: UIApplication) {

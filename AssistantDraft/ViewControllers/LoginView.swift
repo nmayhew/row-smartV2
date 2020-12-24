@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+//import Firebase
 import GoogleSignIn
 
 //Pop up to create login details
@@ -42,7 +42,7 @@ class loginViewController: popUPViewController {
         backFromSignUp.layer.cornerRadius = 5.0
         SignUpview.isHidden = true
         
-        Auth.auth().addStateDidChangeListener() { auth, user in
+        /*Auth.auth().addStateDidChangeListener() { auth, user in
             user?.reload { (error) in
                 if user != nil {
                     if (user!.isEmailVerified) {
@@ -70,7 +70,7 @@ class loginViewController: popUPViewController {
                     }
                 }
             }
-        }
+        }*/
 
         teamName.delegate = self
         teamEmailAddress.delegate = self
@@ -90,7 +90,7 @@ class loginViewController: popUPViewController {
           else {
             return
         }
-        Auth.auth().createUser(withEmail: email, password: password) { user, error in
+        /*Auth.auth().createUser(withEmail: email, password: password) { user, error in
             if error == nil {
                 Auth.auth().signIn(withEmail: self.teamEmailAddress.text!, password: self.teamPassword.text!)
                 let user = Auth.auth().currentUser!
@@ -116,7 +116,7 @@ class loginViewController: popUPViewController {
                 self.handleError(error: error!)
             }
             
-        }
+        }*/
         
     }
     
@@ -128,7 +128,7 @@ class loginViewController: popUPViewController {
            let saveAction = UIAlertAction(title: "Reset", style: .default) { _ in
              
                 let emailField = alert.textFields![0]
-                Auth.auth().sendPasswordReset(withEmail: emailField.text!) { error in
+                /*Auth.auth().sendPasswordReset(withEmail: emailField.text!) { error in
                     if (error != nil) {
                         let title = "Failed Password Reset"
                         var message = "Failed to reset your password"
@@ -153,7 +153,7 @@ class loginViewController: popUPViewController {
                         self.present(alert, animated: true, completion: nil)
                     }
                     
-                }
+                }*/
             }
            let cancelAction = UIAlertAction(title: "Cancel",
                                             style: .cancel)
@@ -178,7 +178,7 @@ class loginViewController: popUPViewController {
                return
            }
            
-           Auth.auth().signIn(withEmail: email, password: password) { user, error in
+           /*Auth.auth().signIn(withEmail: email, password: password) { user, error in
              if let error = error, user == nil {
                 self.handleError(error: error)
              } else {
@@ -195,7 +195,7 @@ class loginViewController: popUPViewController {
                     }
                 }
             }
-           }
+           }*/
     }
     
     
@@ -210,7 +210,7 @@ class loginViewController: popUPViewController {
     }
     
     func handleError(error: Error) {
-        let errorAuthStatus = AuthErrorCode.init(rawValue: error._code)!
+        /*let errorAuthStatus = AuthErrorCode.init(rawValue: error._code)!
         var title = "Failed"
         var message = "Failed to Log in or Sign Up"
          switch errorAuthStatus {
@@ -242,7 +242,7 @@ class loginViewController: popUPViewController {
          
          alert.addAction(UIAlertAction(title: "OK", style: .default))
          
-         self.present(alert, animated: true, completion: nil)
+         self.present(alert, animated: true, completion: nil)*/
      }
 
 }
