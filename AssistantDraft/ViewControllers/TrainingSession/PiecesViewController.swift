@@ -143,7 +143,7 @@ class PiecesViewController: UIViewController, UITableViewDataSource, UITableView
         } else if (run) {
             run = false
             
-            startButton.setTitle("Start \(pieceNumber+1) piece", for: .normal)
+            startButton.setTitle("Start piece \(pieceNumber+1)", for: .normal)
         } else {
             savePiece()
             //Reset for next piece
@@ -187,7 +187,7 @@ class PiecesViewController: UIViewController, UITableViewDataSource, UITableView
         runTime.text = "Run Time: \(formattedRunTime)"
         restTime.text = "Rest Time: \(formattedRestTime)"
         pieceNumber += 1
-        startButton.setTitle("Start \(pieceNumber) piece",
+        startButton.setTitle("Start piece \(pieceNumber)",
             for: .normal)
             pieceNo.text = "Piece No."
         

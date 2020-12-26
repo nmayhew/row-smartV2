@@ -15,10 +15,10 @@
             timestampString = "589903135.5690531"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "262"
-            endingLineNumber = "262"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "263"
+            endingLineNumber = "263"
+            landmarkName = "popUpResults(lastView:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

@@ -152,7 +152,7 @@ class TrainingSessionViewController: UIViewController, sendNotes, sendPieces, pi
     func readyToSaveAndSegue() {
         if (savedPieces && savedNotes && !saved) {
             saveSession()
-            performSegue(withIdentifier: "GoHomeFromTraining", sender: self)
+            segueHome()
         }
     }
     
@@ -191,7 +191,7 @@ class TrainingSessionViewController: UIViewController, sendNotes, sendPieces, pi
             savedNotes = true
             savedPieces = true
             saveSession()
-            performSegue(withIdentifier: "GoHomeFromTraining", sender: self)
+            segueHome()
         } else if (!notesLoaded){
             //No Notes
             coachNotes = "No notes entered"
@@ -286,15 +286,24 @@ class TrainingSessionViewController: UIViewController, sendNotes, sendPieces, pi
     }
     
     //MARK: Segue prep
-    //Stop session can't re run until everthing is saved
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+    //Stop session can't re run until everything is saved
+    func segueHome() {
+        if (saved == false) {
+            return
+        }
+        let navHomeDest = self.storyboard?.instantiateViewController(withIdentifier: "NavHomeID")as! NavController
+        let homeView = navHomeDest.viewControllers.first! as! HomeViewController2nd
+        homeView.index = 2
+        UIApplication.shared.keyWindow?.rootViewController = navHomeDest
+    }
+    /*override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if (identifier == "GoHomeFromTraining") {
             if (saved == false) {
                 return false
             }
         }
         return true
-    }
+    }*/
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "TrainingSessionSubViews" {
@@ -302,11 +311,11 @@ class TrainingSessionViewController: UIViewController, sendNotes, sendPieces, pi
             self.embeddedPageViewController = dest
             dest.parentViewContr = self
         }
-        if segue.identifier ==  "GoHomeFromTraining" {
+        /*if segue.identifier ==  "GoHomeFromTraining" {
             let dest = segue.destination as! NavController
             let homeView = dest.viewControllers.first! as! HomeViewController2nd
             homeView.index = 2
-        }
+        }*/
     }
 }
 

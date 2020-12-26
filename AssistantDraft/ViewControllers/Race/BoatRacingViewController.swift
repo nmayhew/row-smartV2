@@ -145,7 +145,7 @@ class RacingBoatViewController: UIViewController, UICollectionViewDelegate, UICo
                     CoreDataStack.context.delete(boat)
                 }
                 CoreDataStack.context.delete(self.currRace!)
-                self.performSegue(withIdentifier: "ETgoesHome", sender: self)
+                self.segueHome()
                 
             }
             alertController.addAction(returnAction)
@@ -236,7 +236,8 @@ class RacingBoatViewController: UIViewController, UICollectionViewDelegate, UICo
         }
         CoreDataStack.saveContext()
         //CoreDataStack.context.delete(currRace!)
-        self.performSegue(withIdentifier: "ETgoesHome", sender: self)
+        
+        self.segueHome()
     }
     
     //Starts all boats at same time if haven't already been started.
@@ -340,13 +341,22 @@ class RacingBoatViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     //MARK: Segue prepartion
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    func segueHome() {
+        let navHomeDest = self.storyboard?.instantiateViewController(withIdentifier: "NavHomeID")as! NavController
+        let homeView = navHomeDest.viewControllers.first! as! HomeViewController2nd
+        homeView.index = 1
+        UIApplication.shared.keyWindow?.rootViewController = navHomeDest
+
+    }
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "ETgoesHome") {
             let dest = segue.destination as! NavController
+            print(dest.viewControllers)
             let homeView = dest.viewControllers.first! as! HomeViewController2nd
             homeView.index = 1
+            
         }
-    }
+    }*/
     
     
     

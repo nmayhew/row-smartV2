@@ -194,7 +194,7 @@ class RacingSeatRaceViewController: UIViewController, UICollectionViewDelegate, 
                     self.deleteBoatDetails(boat: boat)
                     CoreDataStack.context.delete(boat)
                 }
-                self.performSegue(withIdentifier: "PostSeatRacing", sender: self)
+                self.segueHome()
             }))
             alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
             
@@ -322,7 +322,7 @@ class RacingSeatRaceViewController: UIViewController, UICollectionViewDelegate, 
         CoreDataStack.saveContext()
         //Delete from context
         //CoreDataStack.context.delete(currRace!)
-        performSegue(withIdentifier: "PostSeatRacing", sender: self)
+        segueHome()
     }
     
     //Pops up results view controller
@@ -390,15 +390,22 @@ class RacingSeatRaceViewController: UIViewController, UICollectionViewDelegate, 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         allBoatInfo[indexPath.row].cellPressed()
     }
-    //MARK: Segue 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //MARK: Segue
+    func segueHome() {
+        let navHomeDest = self.storyboard?.instantiateViewController(withIdentifier: "NavHomeID")as! NavController
+        let homeView = navHomeDest.viewControllers.first! as! HomeViewController2nd
+        homeView.index = 0
+        UIApplication.shared.keyWindow?.rootViewController = navHomeDest
+
+    }
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "PostSeatRacing") {
             let dest = segue.destination as! NavController
             let homeView = dest.viewControllers.first! as! HomeViewController2nd
             homeView.index = 0
             
         }
-    }
+    }*/
 }
 
 // MARK: - Collection View Flow Layout Delegate
