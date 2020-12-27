@@ -58,7 +58,8 @@ class RaceHomeViewController: parentHomeViewController, UICollectionViewDataSour
         }
         
         let p = gestureRecognizer.location(in: self.raceCollectionView)
-        
+        let generator = UIImpactFeedbackGenerator(style: .heavy)
+        generator.impactOccurred()
         //Find indexPath, set up alert controller
         if let indexPath = (self.raceCollectionView.indexPathForItem(at: p)) {
             let alertController = UIAlertController(title: "Delete", message: "Confirm to delete this seat race", preferredStyle: .alert)

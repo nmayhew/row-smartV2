@@ -19,6 +19,8 @@ class RateMonitorCollectionViewCell: UICollectionViewCell {
     
     
     @IBAction func rateButtonPressed(_ sender: Any) {
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
         let currentTime = Date().timeIntervalSince1970
         let currColor = self.backgroundColor
         self.backgroundColor = currColor?.withAlphaComponent(0.8)

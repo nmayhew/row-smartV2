@@ -57,7 +57,8 @@ class TraininSessionHomeViewController: parentHomeViewController, UICollectionVi
         if (gestureRecognizer.state != UIGestureRecognizer.State.began){
             return
         }
-        
+        let generator = UIImpactFeedbackGenerator(style: .heavy)
+        generator.impactOccurred()
         //Find indexPath, set up alert controller
         let p = gestureRecognizer.location(in: self.trainCollection)
         if let indexPath = (self.trainCollection.indexPathForItem(at: p)) {

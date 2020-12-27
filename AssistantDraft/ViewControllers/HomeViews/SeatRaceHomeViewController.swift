@@ -55,7 +55,8 @@ class SeatRaceHomeViewController: parentHomeViewController, UICollectionViewData
         if (gestureRecognizer.state != UIGestureRecognizer.State.began){
             return
         }
-        
+        let generator = UIImpactFeedbackGenerator(style: .heavy)
+        generator.impactOccurred()
         let p = gestureRecognizer.location(in: self.savedSeatRaes)
         //Find indexPath, set up alert controller
         if let indexPath = (self.savedSeatRaes.indexPathForItem(at: p)) {

@@ -46,6 +46,8 @@ class TrainingSessionViewController: UIViewController, sendNotes, sendPieces, pi
     //MARK: Split Information
     var splitPresses: [TimeInterval] = []
     @IBAction func SPMpressed(_ sender: Any) {
+            let generator = UIImpactFeedbackGenerator(style: .light)
+            generator.impactOccurred()
             let currentTime = Date().timeIntervalSince1970
             let currColor = SPM.backgroundColor
             SPM.backgroundColor = currColor?.withAlphaComponent(0.8)
