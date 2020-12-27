@@ -177,19 +177,21 @@ class SeatRaceCreateViewController: UIViewController, UITableViewDataSource, UIT
         distance.resignFirstResponder()
         if (indexPath.section == 0) {
             let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sbPopUpID") as! PopUpViewController
-            self.addChild(popOverVC)
             
+            self.addChild(popOverVC)
             popOverVC.delegate = self
             popOverVC.view.frame = self.view.frame
             self.view.addSubview(popOverVC.view)
+            popOverVC.didMove(toParent: self)
             popOverVC.boatNameField.text = seatRaceBoats[indexPath.row].boatName
             popOverVC.closeButton.setTitle("Delete Boat", for: .normal)
             let index = findScrollerTypeIndex(boatTypes: popOverVC.boatTypes, index: indexPath.row)
-            popOverVC.didMove(toParent: self)
+            
             popOverVC.laneBoatTypePicker.selectRow(Int(seatRaceBoats[indexPath.row].lane - 1), inComponent: 0, animated: true)
             popOverVC.laneBoatTypePicker.selectRow(index!, inComponent: 1, animated: true)
             popOverVC.createBoatLabel.text = "Edit Boat"
-            popOverVC.addBoatButton.setTitle("Edit Boat", for: .normal)
+            popOverVC.addBoatButton.setTitle("Edit", for: .normal)
+            
             //Delete existing row
             CoreDataStack.context.delete(seatRaceBoats[indexPath.row])
             seatRaceBoats.remove(at: indexPath.row)

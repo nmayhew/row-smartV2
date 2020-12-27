@@ -41,11 +41,14 @@ class PopUpViewController: popUPViewController, UIPickerViewDelegate, UIPickerVi
         
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         popUpView.addGradientBackground(firstColor: UIColor.init(rgb: 0x1B2BD6), secondColor: UIColor.init(rgb: 0x1b5ad6))
         super.viewDidAppear(animated)
+        
     }
+    
     
     //Resigns keyboard when return is pressed
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

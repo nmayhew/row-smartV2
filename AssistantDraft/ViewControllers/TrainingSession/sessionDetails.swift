@@ -14,7 +14,7 @@ class sessionDetails: UIViewController {
 
     //Contains Map view that shows GPS data 
     @IBOutlet weak var mapView: MKMapView!
-    
+    private let MAPSPAN: CLLocationDistance = 750
     private var first: Bool = true
     private var prevLocation: CLLocation? = nil
     
@@ -24,17 +24,20 @@ class sessionDetails: UIViewController {
         //Sets up observer to listen for locations post and new heading sent post.
         let nc = NotificationCenter.default
         nc.addObserver(self, selector: #selector(locationRecieved), name: NSNotification.Name(rawValue: "locationSent"), object: nil)
-        nc.addObserver(self
-            , selector: #selector(headingReceived
-            ), name: NSNotification.Name(rawValue: "headingSent"), object: nil)
+        //nc.addObserver(self
+           // , selector: #selector(headingReceived
+            //), name: NSNotification.Name(rawValue: "headingSent"), object: nil)
         first = true
         
         mapView.isUserInteractionEnabled = false
+       
+        let initialView = MKCoordinateRegion(center: mapView!.userLocation.coordinate, latitudinalMeters: MAPSPAN, longitudinalMeters: MAPSPAN)
+        mapView.setRegion(initialView, animated: true)
+        mapView.showsUserLocation = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let initialView = MKCoordinateRegion(center: mapView!.userLocation.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
-        mapView.setRegion(initialView, animated: true)
+        //print(mapView!.userLocation.coordinate)
         mapView.showsUserLocation = true
     }
     
@@ -43,13 +46,6 @@ class sessionDetails: UIViewController {
         mapView.showsUserLocation = false
     }
 
-    //Handles notification for new heading
-    @objc func headingReceived(notification: NSNotification) {
-        if let heading = notification.userInfo?["currHeading"] as? CLHeading {
-            mapView.camera.heading = heading.magneticHeading
-            mapView.setCamera(mapView.camera, animated: true)
-        }
-    }
     
     //Handles notification for new location
     @objc func locationRecieved(notification: NSNotification) {
@@ -73,7 +69,7 @@ class sessionDetails: UIViewController {
             let coordinates = [locationList[index].coordinate, locationList[index+1].coordinate]
             mapView.addOverlay(MKPolyline(coordinates: coordinates, count: 2))
         }
-        let region = MKCoordinateRegion.init(center: locationList.last!.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
+        let region = MKCoordinateRegion.init(center: locationList.last!.coordinate, latitudinalMeters: MAPSPAN, longitudinalMeters: MAPSPAN)
         mapView.setRegion(region, animated: true)
     }
     
@@ -81,7 +77,7 @@ class sessionDetails: UIViewController {
     func updateMap(lastLocation: CLLocation, newLocation: CLLocation){
         let coordinates = [lastLocation.coordinate, newLocation.coordinate]
         mapView.addOverlay(MKPolyline(coordinates: coordinates, count: 2))
-        let region = MKCoordinateRegion.init(center: newLocation.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
+        let region = MKCoordinateRegion.init(center: newLocation.coordinate, latitudinalMeters: MAPSPAN, longitudinalMeters: MAPSPAN)
         mapView.setRegion(region, animated: true)
         
     }

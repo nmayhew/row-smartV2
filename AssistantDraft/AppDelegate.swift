@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 //import Firebase
-import GoogleSignIn
+//import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

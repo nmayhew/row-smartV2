@@ -398,14 +398,6 @@ class RacingSeatRaceViewController: UIViewController, UICollectionViewDelegate, 
         UIApplication.shared.keyWindow?.rootViewController = navHomeDest
 
     }
-    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "PostSeatRacing") {
-            let dest = segue.destination as! NavController
-            let homeView = dest.viewControllers.first! as! HomeViewController2nd
-            homeView.index = 0
-            
-        }
-    }*/
 }
 
 // MARK: - Collection View Flow Layout Delegate

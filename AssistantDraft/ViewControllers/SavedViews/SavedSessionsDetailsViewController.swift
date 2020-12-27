@@ -32,7 +32,7 @@ class SavedSessionsDetailsViewController: UIViewController, UITableViewDataSourc
         
         // Format the View
         let formattedTime = varFormatter.time(Int(session!.duration))
-        duration.text = "Length: \(formattedTime)"
+        duration.text = "Time: \(formattedTime)"
         //Load Date and set label
         let dateCurr = session!.date
         let dateFormatterPrint = DateFormatter()
@@ -103,7 +103,7 @@ class SavedSessionsDetailsViewController: UIViewController, UITableViewDataSourc
         if (pieces.count == 0) {
             return "No Pieces Recorded"
         }
-        return "Piece No. \(section+1)"
+        return "Piece \(section+1)"
     }
     
     //Builds Cell
@@ -119,11 +119,11 @@ class SavedSessionsDetailsViewController: UIViewController, UITableViewDataSourc
         }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "pieceItem", for: indexPath) as! pieceTableCell
-        cell.distanceLabel.text = "Distance: \(pieces[indexPath.section].distance)"
+        cell.distanceLabel.text = "Distance: \(pieces[indexPath.section].distance)m"
         let formattedRunTime = varFormatter.time(Int(pieces[indexPath.section].lengthTime))
         let formattedRestTime = varFormatter.time(Int(pieces[indexPath.section].restTime))
-        cell.runTime.text = "Run Time: \(formattedRunTime)"
-        cell.restTime.text = "Rest Time: \(formattedRestTime)"
+        cell.runTime.text = "Time: \(formattedRunTime)"
+        cell.restTime.text = "Rest: \(formattedRestTime)"
         let formattedPace = varFormatter.pace(distance: Measurement(value: Double(pieces[indexPath.section].distance), unit: UnitLength.meters), seconds: Int(pieces[indexPath.section].lengthTime), outputUnit: UnitSpeed.secondsPerFiveHundredMeter)
         
         cell.aveSplit.text = "Split: \(formattedPace)"

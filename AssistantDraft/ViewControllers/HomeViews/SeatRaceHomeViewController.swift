@@ -132,13 +132,18 @@ class SeatRaceHomeViewController: parentHomeViewController, UICollectionViewData
         cell.layer.cornerRadius = 5.0
         
         let formattedDistance = varFormatter.distance(Measurement(value: Double(seatRaceArray[indexPath.row].distance), unit: UnitLength.meters))
-        cell.distance.text = "Distance: \(formattedDistance)"
+        cell.distance.text = " Distance: \(formattedDistance)"
         let dateCurr = seatRaceArray[indexPath.row].date!
-        cell.seatRaceDate.text = "Seat Race -- \(dateFormatterPrint.string(from: dateCurr))"
+        cell.seatRaceDate.text = " Seat Racing - \(dateFormatterPrint.string(from: dateCurr))"
         let lowestRaceCount = lowestRaceCountFunc(seatRace: seatRaceArray[indexPath.row])
         let numberOfCres = numberOfBoats(seatRace: seatRaceArray[indexPath.row])
-        cell.numberOfCrews.text = "Number of Crews: \(numberOfCres)"
-        cell.swaps.text = "Number of Swaps: \(lowestRaceCount - 1) "
+        cell.numberOfCrews.text = " \(numberOfCres) Crews"
+        if (lowestRaceCount - 1 == 1) {
+            cell.swaps.text = " \(lowestRaceCount - 1) Swap"
+        } else {
+            cell.swaps.text = " \(lowestRaceCount - 1) Swaps"
+        }
+        
         cell.addGradientBackground(firstColor: UIColor.init(rgb: 0x1B2BD6), secondColor: UIColor.init(rgb: 0x3d85e7))
         return cell
     }

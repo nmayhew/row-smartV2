@@ -163,15 +163,20 @@ class TraininSessionHomeViewController: parentHomeViewController, UICollectionVi
        
         cell.addGradientBackground(firstColor: UIColor.init(rgb: 0x1B2BD6), secondColor: UIColor.init(rgb: 0x3d85e7))
         let formattedDistance = varFormatter.distance(Measurement(value: Double(trainSesArray[indexPath.row].distance), unit: UnitLength.meters))
-        cell.distance.text = "Distance: \(formattedDistance)"
+        cell.distance.text = " Distance: \(formattedDistance)"
         let dateCurr = trainSesArray[indexPath.row].date!
-        cell.trainDate.text = "Training -- \(dateFormatterPrint.string(from: dateCurr))"
+        cell.trainDate.text = " Training - \(dateFormatterPrint.string(from: dateCurr))"
         let formattedTime = varFormatter.time(Int(trainSesArray[indexPath.row].duration))
-        cell.runTime.text = "Length: \(formattedTime)"
+        cell.runTime.text = " Time: \(formattedTime)"
         //Pieces
         let sortDescriptorPiece = NSSortDescriptor(key: #keyPath(Piece.startTime), ascending: true)
         let pieces = trainSesArray[indexPath.row].pieces?.sortedArray(using:[sortDescriptorPiece]) as! [Piece]
-        cell.pieces.text = "Number of Pieces: \(pieces.count)"
+        if (pieces.count == 1) {
+            cell.pieces.text = " \(pieces.count) Piece"
+        } else {
+            cell.pieces.text = " \(pieces.count) Pieces"
+        }
+        
         return cell
     }
     

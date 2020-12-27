@@ -23,6 +23,7 @@ class popUPViewController: UIViewController {
             self.view.alpha = 1.0
             self.view.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         });
+        
     }
     
     func removeAnimate() {
@@ -32,6 +33,7 @@ class popUPViewController: UIViewController {
         }, completion:{(finished : Bool)  in
             if (finished)
             {
+                self.dismiss(animated: true)
                 self.view.removeFromSuperview()
             }
         });

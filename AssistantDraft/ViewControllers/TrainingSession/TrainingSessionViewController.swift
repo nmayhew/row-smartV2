@@ -296,14 +296,7 @@ class TrainingSessionViewController: UIViewController, sendNotes, sendPieces, pi
         homeView.index = 2
         UIApplication.shared.keyWindow?.rootViewController = navHomeDest
     }
-    /*override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if (identifier == "GoHomeFromTraining") {
-            if (saved == false) {
-                return false
-            }
-        }
-        return true
-    }*/
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "TrainingSessionSubViews" {
@@ -311,11 +304,7 @@ class TrainingSessionViewController: UIViewController, sendNotes, sendPieces, pi
             self.embeddedPageViewController = dest
             dest.parentViewContr = self
         }
-        /*if segue.identifier ==  "GoHomeFromTraining" {
-            let dest = segue.destination as! NavController
-            let homeView = dest.viewControllers.first! as! HomeViewController2nd
-            homeView.index = 2
-        }*/
+        
     }
 }
 

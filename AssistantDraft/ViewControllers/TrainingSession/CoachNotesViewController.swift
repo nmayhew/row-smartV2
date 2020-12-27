@@ -33,6 +33,7 @@ class CoachNotesViewController: UIViewController, UITextViewDelegate {
         CoachNotesView.text = "Coaches' Notes"
         CoachNotesView.textColor = UIColor.lightGray
         CoachNotesView.selectedTextRange = CoachNotesView.textRange(from: CoachNotesView.beginningOfDocument, to: CoachNotesView.beginningOfDocument)
+        CoachNotesView.tintColor = .systemBlue
         setUpTextFields()
         
         CoachNotesView.layer.borderColor = UIColor.lightGray.cgColor

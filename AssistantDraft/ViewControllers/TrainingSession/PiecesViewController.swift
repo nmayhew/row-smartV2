@@ -133,11 +133,11 @@ class PiecesViewController: UIViewController, UITableViewDataSource, UITableView
             //Ready for first piece
             run = true
             pieceDate = Date()
-            pieceNo.text = "Piece No. \(pieceNumber)"
+            pieceNo.text = "Piece \(pieceNumber)"
             let formattedRestTime = varFormatter.time(restSeconds)
             let formattedRunTime = varFormatter.time(runSeconds)
-            runTime.text = "Run Time: \(formattedRunTime)"
-            restTime.text = "Rest Time: \(formattedRestTime)"
+            runTime.text = "Time: \(formattedRunTime)"
+            restTime.text = "Rest: \(formattedRestTime)"
             startButton.setTitle("Start rest", for: .normal)
             run = true
         } else if (run) {
@@ -154,11 +154,11 @@ class PiecesViewController: UIViewController, UITableViewDataSource, UITableView
             distanceCurr.value = 0.0
             runSeconds = 0
             restSeconds = 0
-            pieceNo.text = "Piece No. \(pieceNumber)"
+            pieceNo.text = "Piece \(pieceNumber)"
             let formattedRestTime = varFormatter.time(restSeconds)
             let formattedRunTime = varFormatter.time(runSeconds)
-            runTime.text = "Run Time: \(formattedRunTime)"
-            restTime.text = "Rest Time: \(formattedRestTime)"
+            runTime.text = "Time: \(formattedRunTime)"
+            restTime.text = "Rest: \(formattedRestTime)"
             startButton.setTitle("Start rest", for: .normal)
         }
     }
@@ -184,12 +184,12 @@ class PiecesViewController: UIViewController, UITableViewDataSource, UITableView
         
         distance.text = "\(formattedDistance)"
         aveSplit.text = "\(formattedPace)"
-        runTime.text = "Run Time: \(formattedRunTime)"
-        restTime.text = "Rest Time: \(formattedRestTime)"
+        runTime.text = "Time: \(formattedRunTime)"
+        restTime.text = "Rest: \(formattedRestTime)"
         pieceNumber += 1
         startButton.setTitle("Start piece \(pieceNumber)",
             for: .normal)
-            pieceNo.text = "Piece No."
+            pieceNo.text = "Piece "
         
     }
     
@@ -219,11 +219,11 @@ class PiecesViewController: UIViewController, UITableViewDataSource, UITableView
         if (run) {
             runSeconds += 1
             let formattedRunTime = varFormatter.time(runSeconds)
-            runTime.text = "Run Time: \(formattedRunTime)"
+            runTime.text = "Length \(formattedRunTime)"
         } else {
             restSeconds += 1
             let formattedRestTime = varFormatter.time(restSeconds)
-            restTime.text = "Rest Time: \(formattedRestTime)"
+            restTime.text = "Rest: \(formattedRestTime)"
         }
     }
     
@@ -240,7 +240,7 @@ class PiecesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Piece No. \(section+1)"
+        return "Piece \(section+1)"
     }
     //Builds Cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -248,8 +248,8 @@ class PiecesViewController: UIViewController, UITableViewDataSource, UITableView
         cell.distanceLabel.text = "\(piecesArray[indexPath.section].distance)m"
         let formattedRunTime = varFormatter.time(Int(piecesArray[indexPath.section].lengthTime))
         let formattedRestTime = varFormatter.time(Int(piecesArray[indexPath.section].restTime))
-        cell.runTime.text = "Run Time: \(formattedRunTime)"
-        cell.restTime.text = "Rest Time: \(formattedRestTime)"
+        cell.runTime.text = "Time: \(formattedRunTime)"
+        cell.restTime.text = "Rest: \(formattedRestTime)"
         let formattedPace = varFormatter.pace(distance: Measurement(value: Double(piecesArray[indexPath.section].distance), unit: UnitLength.meters), seconds: Int(piecesArray[indexPath.section].lengthTime), outputUnit: UnitSpeed.secondsPerFiveHundredMeter)
         
         cell.aveSplit.text = "\(formattedPace)"

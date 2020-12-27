@@ -314,7 +314,7 @@ class RacingBoatViewController: UIViewController, UICollectionViewDelegate, UICo
             cell.layer.shadowOpacity = 0.8
             cell.layer.shadowOffset = CGSize(width: 0, height: 4.0)
             cell.layer.shadowRadius = 3
-            cell.rateMonitor.text = "Rate Monitor"
+            cell.rateMonitor.text = "Rate Tracker"
             return cell
         }
         
@@ -348,15 +348,7 @@ class RacingBoatViewController: UIViewController, UICollectionViewDelegate, UICo
         UIApplication.shared.keyWindow?.rootViewController = navHomeDest
 
     }
-    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "ETgoesHome") {
-            let dest = segue.destination as! NavController
-            print(dest.viewControllers)
-            let homeView = dest.viewControllers.first! as! HomeViewController2nd
-            homeView.index = 1
-            
-        }
-    }*/
+    
     
     
     

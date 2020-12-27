@@ -82,11 +82,7 @@ class RaceHomeViewController: parentHomeViewController, UICollectionViewDataSour
         
     }
     
-    /*@IBAction func unwindToRaceHomeViewController(_ unwindSegue: UIStoryboardSegue) {
-        let sourceViewController = unwindSegue.source
-        
-        // Use data from the view controller which initiated the unwind segue
-    }*/
+    
     
     @IBAction func addButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "newRace", sender: self)
@@ -147,13 +143,25 @@ class RaceHomeViewController: parentHomeViewController, UICollectionViewDataSour
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseID, for: indexPath) as! raceHomeCell
         
         let formattedDistance = varFormatter.distance(Measurement(value: Double(raceArray[indexPath.row].distance), unit: UnitLength.meters))
-        cell.distance.text = "  Distance: \(formattedDistance)"
-        let dateCurr = raceArray[indexPath.row].date!
-        cell.raceDate.text = "  Race -- \(dateFormatterPrint.string(from: dateCurr))"
         let boats = raceArray[indexPath.row].boats?.sortedArray(using: [sortDescriptorBoat]) as! [Boat]
-        cell.crewsNo.text = "  Number of Crews: \(boats.count)"
         let listOfTimes = boats[0].boattimes?.sortedArray(using: [sortDescriptorBoatTimes]) as! [BoatTimes]
-        cell.raceNo.text = "  Number of Races: \(listOfTimes.count)"
+        if (listOfTimes.count == 1) {
+            cell.distance.text = " Distance: \(formattedDistance)"
+            cell.raceNo.text = ""
+        } else {
+            cell.distance.text = " \(listOfTimes.count) * \(formattedDistance)"
+            let totalDistanceText = listOfTimes.count * Int(raceArray[indexPath.row].distance)
+            cell.raceNo.text = " Total Distance: \(totalDistanceText) m"
+        }
+        let dateCurr = raceArray[indexPath.row].date!
+        cell.raceDate.text = " Racing - \(dateFormatterPrint.string(from: dateCurr))"
+        if (boats.count == 1) {
+            cell.crewsNo.text = " \(boats.count) Crew"
+        } else {
+            cell.crewsNo.text = " \(boats.count) Crews"
+        }
+        
+        //cell.raceNo.text = " \(listOfTimes.count) Sets"
         cell.addGradientBackground(firstColor: UIColor.init(rgb: 0x1B2BD6), secondColor: UIColor.init(rgb: 0x3d85e7))
         return cell
     }
