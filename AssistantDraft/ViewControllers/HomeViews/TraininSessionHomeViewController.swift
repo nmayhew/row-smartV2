@@ -144,6 +144,7 @@ class TraininSessionHomeViewController: parentHomeViewController, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if (trainSesArray.count == 0) {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseID, for: indexPath) as! traininSesHomeCell
+            
             cell.trainDate.text = "No Training Sessions Recorded"
             cell.distance.text = "Press + to record a new training session"
             cell.distance.numberOfLines = 2
@@ -151,9 +152,10 @@ class TraininSessionHomeViewController: parentHomeViewController, UICollectionVi
             cell.trainDate.textAlignment = .center
             cell.distance.textColor = .black
             cell.trainDate.textColor = .black
+            cell.contentView.backgroundColor = UIColor.white
             cell.pieces.text = ""
             cell.runTime.text = ""
-            cell.backgroundColor = .white
+            
             return cell
         }
         
@@ -192,7 +194,7 @@ class TraininSessionHomeViewController: parentHomeViewController, UICollectionVi
     
     //MARK: Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if  segue.identifier == "newShowSessionDetails",//TODO
+        if  segue.identifier == "newShowSessionDetails",
             let destination = segue.destination as? SavedSessionsDetailsViewController,
             let trSesIndex = trainCollection.indexPathsForSelectedItems?.first!.row
         {

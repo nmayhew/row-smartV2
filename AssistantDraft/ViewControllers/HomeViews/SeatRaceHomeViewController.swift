@@ -123,7 +123,7 @@ class SeatRaceHomeViewController: parentHomeViewController, UICollectionViewData
             cell.seatRaceDate.textColor = .black
             cell.numberOfCrews.text = ""
             cell.swaps.text = ""
-            cell.backgroundColor = .white
+            cell.contentView.backgroundColor = UIColor.white
             return cell
         }
         let dateFormatterPrint = DateFormatter()

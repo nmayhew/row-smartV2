@@ -91,7 +91,7 @@ class ResultsPopUpViewController: popUPViewController, UITableViewDataSource, UI
         let raceNo = indexPath.section
         //Ordered in race order
         let listOfTimes = raceBoatsInfo[indexPath.row].boattimes?.sortedArray(using: [sortDescriptorBoatTimes]) as! [BoatTimes]
-        cell.boatName.text = "\(raceBoatsInfo[indexPath.row].boatName!) -- \(raceBoatsInfo[indexPath.row].type!)"
+        cell.boatName.text = "\(raceBoatsInfo[indexPath.row].boatName!)"
         cell.lane.text = "Lane: \(raceBoatsInfo[indexPath.row].lane)"
         let formattedTime = varFormatter.detailTime(Int(listOfTimes[raceNo].timeDeciSeconds))
         cell.time.text = "Time: \(formattedTime)"

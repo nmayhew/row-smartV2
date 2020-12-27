@@ -136,7 +136,7 @@ class RaceHomeViewController: parentHomeViewController, UICollectionViewDataSour
             cell.raceDate.textColor = .black
             cell.crewsNo.text = ""
             cell.raceNo.text = ""
-            cell.backgroundColor = .white
+            cell.contentView.backgroundColor = UIColor.white
             return cell
         }
         let dateFormatterPrint = DateFormatter()

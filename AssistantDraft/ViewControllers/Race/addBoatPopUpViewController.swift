@@ -45,6 +45,7 @@ class PopUpViewController: popUPViewController, UIPickerViewDelegate, UIPickerVi
     }
     override func viewDidAppear(_ animated: Bool) {
         popUpView.addGradientBackground(firstColor: UIColor.init(rgb: 0x1B2BD6), secondColor: UIColor.init(rgb: 0x1b5ad6))
+        
         super.viewDidAppear(animated)
         
     }

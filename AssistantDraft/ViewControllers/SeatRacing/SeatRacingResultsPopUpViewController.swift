@@ -278,7 +278,7 @@ class SeatRacingPopUpViewController: popUPViewController ,UITableViewDataSource,
             let cell = tableView.dequeueReusableCell(withIdentifier: "SeatRaceResultsCell", for: indexPath) as! SeatRacingResults
             let raceNo = indexPath.section
            let listOfTimes = seatRaceBoats[indexPath.row].times?.sortedArray(using: [sortDescriptorSeatBoatTimes]) as! [SeatRaceTime]
-            cell.boatName.text = "\(seatRaceBoats[indexPath.row].boatName!) -- \(seatRaceBoats[indexPath.row].type!)"
+            cell.boatName.text = "\(seatRaceBoats[indexPath.row].boatName!)"
             cell.lane.text = "Lane: \(seatRaceBoats[indexPath.row].lane)"
             let formattedTime = varFormatter.detailTime(Int(listOfTimes[raceNo].deciSeconds))
             cell.time.text = "Time: \(formattedTime)"

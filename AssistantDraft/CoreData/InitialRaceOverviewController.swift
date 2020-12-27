@@ -177,7 +177,6 @@ class CreateBoatsViewController: UIViewController, UITableViewDataSource, UITabl
             
             self.addChild(popOverVC)
             popOverVC.delegate = self
-            popOverVC.view.frame = self.view.frame
             self.view.addSubview(popOverVC.view)
             popOverVC.didMove(toParent: self)
             popOverVC.boatNameField.text = raceBoats[indexPath.row].boatName
@@ -188,6 +187,7 @@ class CreateBoatsViewController: UIViewController, UITableViewDataSource, UITabl
             popOverVC.laneBoatTypePicker.selectRow(index!, inComponent: 1, animated: true)
             popOverVC.createBoatLabel.text = "Edit Boat"
             popOverVC.addBoatButton.setTitle("Edit", for: .normal)
+            popOverVC.popUpView.addGradientBackground(firstColor: UIColor.init(rgb: 0x1B2BD6), secondColor: UIColor.init(rgb: 0x1b5ad6))
             
 
             //Delete existing row

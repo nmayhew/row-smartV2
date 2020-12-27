@@ -82,7 +82,7 @@ class RacingBoatViewController: UIViewController, UICollectionViewDelegate, UICo
             newBoatInfo.delegate = self
             newBoatInfo.finishDelegate = self
             newBoatInfo.timer?.invalidate()
-            newBoatInfo.boatNameString = "\(boat.boatName!) -- \(boat.type!)"
+            newBoatInfo.boatNameString = "\(boat.boatName!)"
             newBoatInfo.laneString = "Lane: \(boat.lane)"
             let formattedTime = varFormatter.detailTime(0)
             newBoatInfo.deciSeconds = 0
