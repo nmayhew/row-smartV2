@@ -95,6 +95,7 @@ class CreateBoatsViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     @objc func newBoat() {
+        
         distance.resignFirstResponder()
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sbPopUpID") as! PopUpViewController
         self.addChild(popOverVC)
@@ -115,6 +116,7 @@ class CreateBoatsViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     @IBAction func infoDistancePressed(_ sender: Any) {
+        distance.resignFirstResponder()
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "distanceInfo") as! distanceInfoViewController
         self.addChild(popOverVC)
         popOverVC.view.frame = self.view.frame

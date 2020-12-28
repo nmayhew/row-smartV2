@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0492D8B54E666602D39196F2 /* Pods_AssistantDraft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB04FDF44D56B61CED9C785 /* Pods_AssistantDraft.framework */; };
+		1924640814F02293F8BA3161 /* Pods_AssistantDraft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77835C68785E2FDB1B12B533 /* Pods_AssistantDraft.framework */; };
 		620C5E602322B7A700657E94 /* varFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C5E5E2322B7A700657E94 /* varFormatter.swift */; };
 		620C5E612322B7A700657E94 /* customAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C5E5F2322B7A700657E94 /* customAnnotation.swift */; };
-		622808C32458837400762867 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 622808C22458837400762867 /* GoogleService-Info.plist */; };
 		622808C62458AF5600762867 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622808C52458AF5600762867 /* TeamViewController.swift */; };
 		6236E3BF22DE3BD400E44D56 /* SavedSessionsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236E3BE22DE3BD400E44D56 /* SavedSessionsDetailsViewController.swift */; };
 		6236E3C422DE3D7900E44D56 /* SaveSessionPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236E3C322DE3D7900E44D56 /* SaveSessionPageViewController.swift */; };
@@ -94,7 +93,7 @@
 		62F6916A22F1A58B003CEDC5 /* CoxlessFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6916922F1A58B003CEDC5 /* CoxlessFourViewController.swift */; };
 		62F6916C22F1A5FB003CEDC5 /* PairFillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6916B22F1A5FB003CEDC5 /* PairFillViewController.swift */; };
 		62F6916F22F1A66B003CEDC5 /* SingleFillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6916E22F1A66B003CEDC5 /* SingleFillViewController.swift */; };
-		FD740BFC915734997BAD0628 /* Pods_AssistantDraft_AssistantDraftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 811FDED226F40A6C900B64CF /* Pods_AssistantDraft_AssistantDraftUITests.framework */; };
+		C29B2F7012A7D7D4A19B5E2E /* Pods_AssistantDraft_AssistantDraftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBADF18DB0CFFAF35AB4B9C /* Pods_AssistantDraft_AssistantDraftUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,11 +107,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3B186C9C0E467339DD24D2F2 /* Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig"; path = "Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		59B224E9114B78A139BD1830 /* Pods-AssistantDraft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssistantDraft.release.xcconfig"; path = "Target Support Files/Pods-AssistantDraft/Pods-AssistantDraft.release.xcconfig"; sourceTree = "<group>"; };
+		3CBADF18DB0CFFAF35AB4B9C /* Pods_AssistantDraft_AssistantDraftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssistantDraft_AssistantDraftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5583D77FF4B89350D9DD8DB8 /* Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig"; path = "Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		620C5E5E2322B7A700657E94 /* varFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = varFormatter.swift; sourceTree = "<group>"; };
 		620C5E5F2322B7A700657E94 /* customAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customAnnotation.swift; sourceTree = "<group>"; };
-		622808C22458837400762867 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		622808C42458884F00762867 /* AssistantDraft.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AssistantDraft.entitlements; sourceTree = "<group>"; };
 		622808C52458AF5600762867 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		6236E3BE22DE3BD400E44D56 /* SavedSessionsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSessionsDetailsViewController.swift; sourceTree = "<group>"; };
@@ -201,10 +199,10 @@
 		62F6916922F1A58B003CEDC5 /* CoxlessFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoxlessFourViewController.swift; sourceTree = "<group>"; };
 		62F6916B22F1A5FB003CEDC5 /* PairFillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairFillViewController.swift; sourceTree = "<group>"; };
 		62F6916E22F1A66B003CEDC5 /* SingleFillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFillViewController.swift; sourceTree = "<group>"; };
-		7FB04FDF44D56B61CED9C785 /* Pods_AssistantDraft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssistantDraft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		811FDED226F40A6C900B64CF /* Pods_AssistantDraft_AssistantDraftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssistantDraft_AssistantDraftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B9112E3CBE45A03EFF16277 /* Pods-AssistantDraft-AssistantDraftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssistantDraft-AssistantDraftUITests.release.xcconfig"; path = "Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests.release.xcconfig"; sourceTree = "<group>"; };
-		97559A090BCA2BED63D34DEA /* Pods-AssistantDraft.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssistantDraft.debug.xcconfig"; path = "Target Support Files/Pods-AssistantDraft/Pods-AssistantDraft.debug.xcconfig"; sourceTree = "<group>"; };
+		77835C68785E2FDB1B12B533 /* Pods_AssistantDraft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssistantDraft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DD6F392C731D416AF38CB69 /* Pods-AssistantDraft-AssistantDraftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssistantDraft-AssistantDraftUITests.release.xcconfig"; path = "Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8A769F4CCCA300D850F9E37C /* Pods-AssistantDraft.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssistantDraft.debug.xcconfig"; path = "Target Support Files/Pods-AssistantDraft/Pods-AssistantDraft.debug.xcconfig"; sourceTree = "<group>"; };
+		FFDB1C88E189069BFB645D7D /* Pods-AssistantDraft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssistantDraft.release.xcconfig"; path = "Target Support Files/Pods-AssistantDraft/Pods-AssistantDraft.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,7 +210,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0492D8B54E666602D39196F2 /* Pods_AssistantDraft.framework in Frameworks */,
+				1924640814F02293F8BA3161 /* Pods_AssistantDraft.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +218,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD740BFC915734997BAD0628 /* Pods_AssistantDraft_AssistantDraftUITests.framework in Frameworks */,
+				C29B2F7012A7D7D4A19B5E2E /* Pods_AssistantDraft_AssistantDraftUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,8 +253,8 @@
 		626F7BA322FB37C700C62DCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7FB04FDF44D56B61CED9C785 /* Pods_AssistantDraft.framework */,
-				811FDED226F40A6C900B64CF /* Pods_AssistantDraft_AssistantDraftUITests.framework */,
+				77835C68785E2FDB1B12B533 /* Pods_AssistantDraft.framework */,
+				3CBADF18DB0CFFAF35AB4B9C /* Pods_AssistantDraft_AssistantDraftUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -299,7 +297,7 @@
 				62B547C722C8991B00B27D07 /* AssistantDraftUITests */,
 				62B547AE22C8991800B27D07 /* Products */,
 				626F7BA322FB37C700C62DCE /* Frameworks */,
-				86BDA356359195AA96A34223 /* Pods */,
+				7343BAFE528BC94F3F94143C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -324,7 +322,6 @@
 				62B547BC22C8991A00B27D07 /* LaunchScreen.storyboard */,
 				62B547BA22C8991A00B27D07 /* Assets.xcassets */,
 				62B547BF22C8991A00B27D07 /* Info.plist */,
-				622808C22458837400762867 /* GoogleService-Info.plist */,
 			);
 			path = AssistantDraft;
 			sourceTree = "<group>";
@@ -439,14 +436,15 @@
 			path = FillSubViews;
 			sourceTree = "<group>";
 		};
-		86BDA356359195AA96A34223 /* Pods */ = {
+		7343BAFE528BC94F3F94143C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				97559A090BCA2BED63D34DEA /* Pods-AssistantDraft.debug.xcconfig */,
-				59B224E9114B78A139BD1830 /* Pods-AssistantDraft.release.xcconfig */,
-				3B186C9C0E467339DD24D2F2 /* Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig */,
-				8B9112E3CBE45A03EFF16277 /* Pods-AssistantDraft-AssistantDraftUITests.release.xcconfig */,
+				8A769F4CCCA300D850F9E37C /* Pods-AssistantDraft.debug.xcconfig */,
+				FFDB1C88E189069BFB645D7D /* Pods-AssistantDraft.release.xcconfig */,
+				5583D77FF4B89350D9DD8DB8 /* Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig */,
+				7DD6F392C731D416AF38CB69 /* Pods-AssistantDraft-AssistantDraftUITests.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -461,8 +459,6 @@
 				62B547A922C8991800B27D07 /* Sources */,
 				62B547AA22C8991800B27D07 /* Frameworks */,
 				62B547AB22C8991800B27D07 /* Resources */,
-				ADEC5BC833F5ED50EAC4F621 /* [CP] Embed Pods Frameworks */,
-				71554839F0AF40EE998F6A04 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -481,8 +477,6 @@
 				62B547C022C8991B00B27D07 /* Sources */,
 				62B547C122C8991B00B27D07 /* Frameworks */,
 				62B547C222C8991B00B27D07 /* Resources */,
-				F476A6451C106BA745A14ACC /* [CP] Embed Pods Frameworks */,
-				B3D72EF3F6666CDFDA25DD19 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -548,7 +542,6 @@
 				62B547BE22C8991A00B27D07 /* LaunchScreen.storyboard in Resources */,
 				62B547BB22C8991A00B27D07 /* Assets.xcassets in Resources */,
 				62B547B622C8991800B27D07 /* Main.storyboard in Resources */,
-				622808C32458837400762867 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,23 +555,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		71554839F0AF40EE998F6A04 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft/Pods-AssistantDraft-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft/Pods-AssistantDraft-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft/Pods-AssistantDraft-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9D7A727BC3AD9C772060438E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -601,40 +577,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ADEC5BC833F5ED50EAC4F621 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft/Pods-AssistantDraft-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft/Pods-AssistantDraft-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft/Pods-AssistantDraft-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B3D72EF3F6666CDFDA25DD19 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C302A9BD3D8B2C33D4ABA62D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -655,23 +597,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F476A6451C106BA745A14ACC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -923,7 +848,7 @@
 		};
 		62B547CE22C8991B00B27D07 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97559A090BCA2BED63D34DEA /* Pods-AssistantDraft.debug.xcconfig */;
+			baseConfigurationReference = 8A769F4CCCA300D850F9E37C /* Pods-AssistantDraft.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AssistantDraft/AssistantDraft.entitlements;
@@ -947,7 +872,7 @@
 		};
 		62B547CF22C8991B00B27D07 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59B224E9114B78A139BD1830 /* Pods-AssistantDraft.release.xcconfig */;
+			baseConfigurationReference = FFDB1C88E189069BFB645D7D /* Pods-AssistantDraft.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AssistantDraft/AssistantDraft.entitlements;
@@ -971,7 +896,7 @@
 		};
 		62B547D122C8991B00B27D07 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B186C9C0E467339DD24D2F2 /* Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig */;
+			baseConfigurationReference = 5583D77FF4B89350D9DD8DB8 /* Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -992,7 +917,7 @@
 		};
 		62B547D222C8991B00B27D07 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B9112E3CBE45A03EFF16277 /* Pods-AssistantDraft-AssistantDraftUITests.release.xcconfig */;
+			baseConfigurationReference = 7DD6F392C731D416AF38CB69 /* Pods-AssistantDraft-AssistantDraftUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -55,7 +55,9 @@ class ResultsPopUpViewController: popUPViewController, UITableViewDataSource, UI
         
         let listOfTimes = raceBoatsInfo[0].boattimes?.sortedArray(using: [sortDescriptorBoatTimes]) as! [BoatTimes]
         noOfRaces = listOfTimes.count
-        distance.text = "Distance: \(raceInfo!.distance)m"
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "MMM dd, yyyy"
+        distance.text = "\(dateFormatterPrint.string(from: raceInfo!.date!)) -- Distance: \(raceInfo!.distance)m"
         
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -119,7 +121,7 @@ class ResultsPopUpViewController: popUPViewController, UITableViewDataSource, UI
         let time = DateFormatter()
         time.dateFormat = "hh:mm"
         let raceTime = time.string(from: raceInfo!.date!)
-        var csvText = "Race,Date,Time\n,\(raceDate),\(raceTime)\n\n"
+        var csvText = "Racing,Date,Time,Distance\n,\(raceDate),\(raceTime),\(raceInfo!.distance)m\n\n"
         
         for raceIndex in 1...noOfRaces {
             let csvRaceHeadline = "Race \(raceIndex):, Time:, Average Split:, % Gold Medal Time:\n"

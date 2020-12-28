@@ -2644,10 +2644,10 @@
                                 <rect key="frame" x="8" y="8" width="359" height="643"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IZH-mC-WaD">
-                                        <rect key="frame" x="8" y="8" width="343" height="584"/>
+                                        <rect key="frame" x="8" y="51" width="343" height="541"/>
                                         <subviews>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aI5-95-nZ0">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="376"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="333"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SeatRaceResultsCell" rowHeight="80" id="FTo-I8-3OI" customClass="SeatRacingResults" customModule="AssistantDraft" customModuleProvider="target">
@@ -2721,7 +2721,7 @@
                                                 </prototypes>
                                             </tableView>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v3K-Oz-yQu">
-                                                <rect key="frame" x="0.0" y="384" width="343" height="200"/>
+                                                <rect key="frame" x="0.0" y="341" width="343" height="200"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="Hho-zj-EKV"/>
@@ -2796,16 +2796,29 @@
                                             <constraint firstAttribute="height" constant="35" id="aSV-sT-NXX"/>
                                         </constraints>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xne-Jk-p8u">
+                                        <rect key="frame" x="8" y="8" width="343" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="bDe-CJ-P2x"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.039215686270000001" green="0.21176470589999999" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="IZH-mC-WaD" firstAttribute="top" secondItem="Sn7-r6-onr" secondAttribute="top" constant="8" id="1On-r7-d7A"/>
+                                    <constraint firstItem="IZH-mC-WaD" firstAttribute="top" secondItem="Sn7-r6-onr" secondAttribute="top" constant="51" id="1On-r7-d7A"/>
+                                    <constraint firstItem="IZH-mC-WaD" firstAttribute="top" secondItem="xne-Jk-p8u" secondAttribute="bottom" constant="8" symbolic="YES" id="1ow-dV-lKo"/>
                                     <constraint firstAttribute="trailing" secondItem="IZH-mC-WaD" secondAttribute="trailing" constant="8" id="5LA-Ab-wdR"/>
                                     <constraint firstItem="IZH-mC-WaD" firstAttribute="leading" secondItem="Sn7-r6-onr" secondAttribute="leading" constant="8" id="VZA-jG-fNT"/>
                                     <constraint firstItem="f8Z-Jt-SGg" firstAttribute="leading" secondItem="Sn7-r6-onr" secondAttribute="leading" constant="8" id="djl-uN-Jlh"/>
                                     <constraint firstItem="f8Z-Jt-SGg" firstAttribute="top" secondItem="IZH-mC-WaD" secondAttribute="bottom" constant="8" id="dpY-VG-FhI"/>
+                                    <constraint firstItem="xne-Jk-p8u" firstAttribute="top" secondItem="Sn7-r6-onr" secondAttribute="top" constant="8" id="eIl-lN-C3L"/>
                                     <constraint firstAttribute="bottom" secondItem="f8Z-Jt-SGg" secondAttribute="bottom" constant="8" id="pfp-Ye-mju"/>
+                                    <constraint firstAttribute="trailing" secondItem="xne-Jk-p8u" secondAttribute="trailing" constant="8" id="qhd-UH-r41"/>
                                     <constraint firstAttribute="trailing" secondItem="f8Z-Jt-SGg" secondAttribute="trailing" constant="8" id="sWZ-7W-2hF"/>
+                                    <constraint firstItem="xne-Jk-p8u" firstAttribute="leading" secondItem="Sn7-r6-onr" secondAttribute="leading" constant="8" id="swF-iT-VoW"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -2824,11 +2837,12 @@
                         <outlet property="popUpView" destination="Sn7-r6-onr" id="fTq-tq-WTs"/>
                         <outlet property="resultsTableView" destination="aI5-95-nZ0" id="H6f-cT-ioi"/>
                         <outlet property="swapsResultsTableView" destination="v3K-Oz-yQu" id="fhO-FM-hz3"/>
+                        <outlet property="titleForSeatRace" destination="xne-Jk-p8u" id="Bp0-zk-XMq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0oM-q8-T8W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1065" y="-2189.7887323943664"/>
+            <point key="canvasLocation" x="1064.8" y="-2189.9550224887557"/>
         </scene>
         <!--Seat Race-->
         <scene sceneID="LVy-be-rhb">

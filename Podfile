@@ -7,12 +7,6 @@ target 'AssistantDraft' do
 
   # Pods for AssistantDraft
 	# add the Firebase pod
-	pod 'Firebase/Analytics'
-	pod 'Firebase/Core'
- 	pod 'Firebase/Database'
-  pod 'Firebase/Storage'
- 	pod 'Firebase/Auth'
-  pod 'GoogleSignIn'
   target 'AssistantDraftUITests' do
     # Pods for testing
   end

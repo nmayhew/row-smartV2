@@ -44,7 +44,7 @@ struct varFormatter {
         let speedMagnitude = seconds != 0 ? distance.value / Double(seconds) : 0
         
         let speed = Measurement(value: speedMagnitude, unit: UnitSpeed.metersPerSecond)
-        var outputSpeed = speed.converted(to: outputUnit)
+        let outputSpeed = speed.converted(to: outputUnit)
         let seconds = TimeInterval(outputSpeed.value)
         
         let formatter = DateComponentsFormatter()
@@ -73,7 +73,7 @@ struct varFormatter {
         let speedMagnitude = seconds != 0 ? distance.value / seconds : 0
         
         let speed = Measurement(value: speedMagnitude, unit: UnitSpeed.metersPerSecond)
-        var outputSpeed = speed.converted(to: outputUnit)
+        let outputSpeed = speed.converted(to: outputUnit)
         let seconds = TimeInterval(outputSpeed.value)
         return "\(seconds.stringFromTimeInterval()) min/500m"        
     }

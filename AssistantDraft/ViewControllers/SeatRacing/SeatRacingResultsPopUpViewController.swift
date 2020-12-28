@@ -56,6 +56,7 @@ class aSwapMatched: aSwapUnmatched {
 
 class SeatRacingPopUpViewController: popUPViewController ,UITableViewDataSource, UITableViewDelegate{
 
+    @IBOutlet weak var titleForSeatRace: UILabel!
     @IBOutlet weak var closebutton: UIButton!
     @IBOutlet weak var swapsResultsTableView: UITableView!
     @IBOutlet weak var resultsTableView: UITableView!
@@ -91,6 +92,9 @@ class SeatRacingPopUpViewController: popUPViewController ,UITableViewDataSource,
         if (preSwaps) {
             swapsResultsTableView.isHidden = true
         }
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "MMM dd, yyyy"
+        titleForSeatRace.text = "\(dateFormatterPrint.string(from: seatRaceInfo!.date!)) -- Distance: \(seatRaceInfo!.distance)m"
     }
     override func viewDidAppear(_ animated: Bool) {
         
@@ -337,7 +341,7 @@ class SeatRacingPopUpViewController: popUPViewController ,UITableViewDataSource,
         let time = DateFormatter()
         time.dateFormat = "hh:mm"
         let raceTime = time.string(from: seatRaceInfo!.date!)
-        var csvText = "Seat Race,Date,Time\n,\(raceDate),\(raceTime)\n\n"
+        var csvText = "Seat Racing,Date,Time,Distance\n,\(raceDate),\(raceTime),\(seatRaceInfo!.distance)m\n\n"
         
         csvText.append(seatRaceResults())
         
@@ -373,7 +377,7 @@ class SeatRacingPopUpViewController: popUPViewController ,UITableViewDataSource,
         var csvText = "Seat Race Results:\n"
       
         for swapInfo in swapResultsInfo {
-            var swapDetail = "\(swapInfo.swaps!) \(swapInfo.margin!)\n"
+            let swapDetail = "\(swapInfo.swaps!)\(swapInfo.margin!)\n"
             csvText.append(swapDetail)
         }
         

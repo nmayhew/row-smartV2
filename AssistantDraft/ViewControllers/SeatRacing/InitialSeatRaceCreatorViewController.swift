@@ -115,6 +115,7 @@ class SeatRaceCreateViewController: UIViewController, UITableViewDataSource, UIT
     }
     
     @IBAction func distanceInfoPushed(_ sender: Any) {
+        distance.resignFirstResponder()
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "distanceInfo") as! distanceInfoViewController
         self.addChild(popOverVC)
         popOverVC.view.frame = self.view.frame
