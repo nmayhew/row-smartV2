@@ -27,7 +27,7 @@ class CoachNotesViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         self.delegateLoaded?.loadNotes()
         
-        CoachNotesView.layer.cornerRadius = 5.0
+        CoachNotesView.layer.cornerRadius = Constants.CORNERRAD
         CoachNotesView.isScrollEnabled = true
         CoachNotesView.delegate = self
         CoachNotesView.text = "Coaches' Notes"

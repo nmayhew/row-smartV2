@@ -32,7 +32,7 @@ class PopUpViewController: popUPViewController, UIPickerViewDelegate, UIPickerVi
         
         showAnimate()
         
-        popUpView.layer.cornerRadius = 5.0
+        popUpView.layer.cornerRadius = Constants.CORNERRAD
         popUpView.layer.masksToBounds = false
         
         createPicker()

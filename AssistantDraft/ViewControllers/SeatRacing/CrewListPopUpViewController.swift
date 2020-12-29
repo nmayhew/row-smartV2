@@ -20,7 +20,7 @@ class CrewListViewController: popUPViewController {
         super.viewDidLoad()
         showAnimate()
         CrewLabel.text = rowersLineup
-        popUpView.layer.cornerRadius = 5.0
+        popUpView.layer.cornerRadius = Constants.CORNERRAD
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

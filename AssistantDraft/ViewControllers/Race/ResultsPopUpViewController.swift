@@ -44,7 +44,7 @@ class ResultsPopUpViewController: popUPViewController, UITableViewDataSource, UI
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        thePopView.layer.cornerRadius = 5.0
+        thePopView.layer.cornerRadius = Constants.CORNERRAD
 
         showAnimate()
         

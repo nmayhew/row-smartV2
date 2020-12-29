@@ -130,7 +130,7 @@ class SeatRaceHomeViewController: parentHomeViewController, UICollectionViewData
         dateFormatterPrint.dateFormat = "MMM dd, yyyy"
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseID, for: indexPath) as! seatRaceCell
         cell.backgroundColor = UIColor.init(rgb: 0x1B2BD6)
-        cell.layer.cornerRadius = 5.0
+        cell.layer.cornerRadius = Constants.CORNERRAD
         
         let formattedDistance = varFormatter.distance(Measurement(value: Double(seatRaceArray[indexPath.row].distance), unit: UnitLength.meters))
         cell.distance.text = " Distance: \(formattedDistance)"

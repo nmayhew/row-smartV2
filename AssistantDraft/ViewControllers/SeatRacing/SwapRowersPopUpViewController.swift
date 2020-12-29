@@ -26,9 +26,9 @@ class SwapRowersOverviewViewController: popUPViewController, sendSwap, resultsPo
     var noOfRowers: Int?
     override func viewDidLoad() {
         super.viewDidLoad()
-        popUpView.layer.cornerRadius = 5.0
+        popUpView.layer.cornerRadius = Constants.CORNERRAD
         showAnimate()
-        subViews.layer.cornerRadius = 5.0
+        subViews.layer.cornerRadius = Constants.CORNERRAD
         noOfRowers = calculateRowers()
     }
     

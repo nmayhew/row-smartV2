@@ -31,15 +31,15 @@ class loginViewController: popUPViewController {
         super.viewDidLoad()
         showAnimate()
         //Set up
-        loginSubView.layer.cornerRadius = 5.0   
-        signUp.layer.cornerRadius = 5.0
-        loginIn.layer.cornerRadius = 5.0
-        SignUpview.layer.cornerRadius = 5.0
-        realSignUpButton.layer.cornerRadius = 5.0
-        forgottenPassword.layer.cornerRadius = 5.0
+        loginSubView.layer.cornerRadius = Constants.CORNERRAD
+        signUp.layer.cornerRadius = Constants.CORNERRAD
+        loginIn.layer.cornerRadius = Constants.CORNERRAD
+        SignUpview.layer.cornerRadius = Constants.CORNERRAD
+        realSignUpButton.layer.cornerRadius = Constants.CORNERRAD
+        forgottenPassword.layer.cornerRadius = Constants.CORNERRAD
         backFromSignUp.layer.borderWidth = 1.0
         backFromSignUp.layer.borderColor = UIColor.white.cgColor
-        backFromSignUp.layer.cornerRadius = 5.0
+        backFromSignUp.layer.cornerRadius = Constants.CORNERRAD
         SignUpview.isHidden = true
         
         /*Auth.auth().addStateDidChangeListener() { auth, user in

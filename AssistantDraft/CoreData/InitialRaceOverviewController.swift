@@ -51,7 +51,7 @@ class CreateBoatsViewController: UIViewController, UITableViewDataSource, UITabl
         
         //Get rid of keyboard
         setUpTextFields()
-        createRace.layer.cornerRadius = 5.0
+        createRace.layer.cornerRadius = Constants.CORNERRAD
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -236,10 +236,10 @@ class CreateBoatsViewController: UIViewController, UITableViewDataSource, UITabl
                 if (raceDistance == nil && raceBoats.count == 0) {
                     //Let user know of failure by highlighting border red
                     distance.layer.borderColor = UIColor.red.cgColor
-                    distance.layer.cornerRadius = 4.0
+                    distance.layer.cornerRadius = Constants.CORNERRAD
                     distance.layer.borderWidth = 1.0
                     boatTable.layer.borderColor = UIColor.red.cgColor
-                    boatTable.layer.cornerRadius = 4.0
+                    boatTable.layer.cornerRadius = Constants.CORNERRAD
                     boatTable.layer.borderWidth = 1.0
                     return false
                 }
@@ -248,14 +248,14 @@ class CreateBoatsViewController: UIViewController, UITableViewDataSource, UITabl
                     boatTable.layer.borderWidth = 0.0
                     distance.layer.borderColor = UIColor.red.cgColor
                     distance.layer.borderWidth = 1.0
-                    distance.layer.cornerRadius = 4.0
+                    distance.layer.cornerRadius = Constants.CORNERRAD
                     return false
                 }
                 if (raceBoats.count == 0) {
                     distance.layer.borderWidth = 0.0
                     boatTable.layer.borderColor = UIColor.red.cgColor
                     boatTable.layer.borderWidth = 1.0
-                    boatTable.layer.cornerRadius = 4.0
+                    boatTable.layer.cornerRadius = Constants.CORNERRAD
                     return false
                 }
             }

@@ -78,8 +78,8 @@ class PiecesViewController: UIViewController, UITableViewDataSource, UITableView
     
     //Set up appearance of buttons
     func setUpButtons() {
-        startButton.layer.cornerRadius = 5.0
-        stopPieces.layer.cornerRadius = 5.0
+        startButton.layer.cornerRadius = Constants.CORNERRAD
+        stopPieces.layer.cornerRadius = Constants.CORNERRAD
         stopPieces.isEnabled = false
         startButton.isEnabled = false
         let disabledColor = stopPieces.titleColor(for: .normal)?.withAlphaComponent(0.5)

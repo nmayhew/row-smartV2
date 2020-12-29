@@ -49,7 +49,7 @@ class SeatRaceCreateViewController: UIViewController, UITableViewDataSource, UIT
         self.distance.keyboardType = .numberPad
         
         setUpTextFields()
-        confirmBoat.layer.cornerRadius = 5.0
+        confirmBoat.layer.cornerRadius = Constants.CORNERRAD
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -224,10 +224,10 @@ class SeatRaceCreateViewController: UIViewController, UITableViewDataSource, UIT
                 if (raceDistance == nil && seatRaceBoats.count == 0) {
                     //Let user know of failure by highlighting border red
                     distance.layer.borderColor = UIColor.red.cgColor
-                    distance.layer.cornerRadius = 4.0
+                    distance.layer.cornerRadius = Constants.CORNERRAD
                     distance.layer.borderWidth = 1.0
                     boats.layer.borderColor = UIColor.red.cgColor
-                    boats.layer.cornerRadius = 4.0
+                    boats.layer.cornerRadius = Constants.CORNERRAD
                     boats.layer.borderWidth = 1.0
                     return false
                 }
@@ -236,14 +236,14 @@ class SeatRaceCreateViewController: UIViewController, UITableViewDataSource, UIT
                     boats.layer.borderWidth = 0.0
                     distance.layer.borderColor = UIColor.red.cgColor
                     distance.layer.borderWidth = 1.0
-                    distance.layer.cornerRadius = 4.0
+                    distance.layer.cornerRadius = Constants.CORNERRAD
                     return false
                 }
                 if (seatRaceBoats.count == 0) {
                     distance.layer.borderWidth = 0.0
                     boats.layer.borderColor = UIColor.red.cgColor
                     boats.layer.borderWidth = 1.0
-                    boats.layer.cornerRadius = 4.0
+                    boats.layer.cornerRadius = Constants.CORNERRAD
                     return false
                 }
                 if (seatRaceBoats.count == 1) {
@@ -261,7 +261,7 @@ class SeatRaceCreateViewController: UIViewController, UITableViewDataSource, UIT
                     distance.layer.borderWidth = 0.0
                     boats.layer.borderColor = UIColor.red.cgColor
                     boats.layer.borderWidth = 1.0
-                    boats.layer.cornerRadius = 4.0
+                    boats.layer.cornerRadius = Constants.CORNERRAD
                     return false
                 }
             }

@@ -20,7 +20,7 @@ class distanceInfoViewController: popUPViewController {
         super.viewDidLoad()
         showAnimate()
         popUpView.layer.masksToBounds = false
-        popUpView.layer.cornerRadius = 5.0
+        popUpView.layer.cornerRadius = Constants.CORNERRAD
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {

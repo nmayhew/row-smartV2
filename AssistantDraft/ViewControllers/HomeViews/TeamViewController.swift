@@ -19,9 +19,9 @@ class TeamViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        logOutButton.layer.cornerRadius = 5.0
-        passwordChange.layer.cornerRadius = 5.0
-        deleteAccount.layer.cornerRadius = 5.0
+        logOutButton.layer.cornerRadius = Constants.CORNERRAD
+        passwordChange.layer.cornerRadius = Constants.CORNERRAD
+        deleteAccount.layer.cornerRadius = Constants.CORNERRAD
         //let user = Auth.auth().currentUser
         //teamLabel.text = user?.displayName
         /*Auth.auth().addStateDidChangeListener() { auth, user in

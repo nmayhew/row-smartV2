@@ -87,7 +87,7 @@ class SeatRacingPopUpViewController: popUPViewController ,UITableViewDataSource,
         resultsTableView.dataSource = self
         resultsTableView.roundCorners()
         
-        popUpView.layer.cornerRadius = 5.0
+        popUpView.layer.cornerRadius = Constants.CORNERRAD
         createResults()
         if (preSwaps) {
             swapsResultsTableView.isHidden = true
@@ -377,7 +377,7 @@ class SeatRacingPopUpViewController: popUPViewController ,UITableViewDataSource,
         var csvText = "Seat Race Results:\n"
       
         for swapInfo in swapResultsInfo {
-            let swapDetail = "\(swapInfo.swaps!)\(swapInfo.margin!)\n"
+            let swapDetail = "\(swapInfo.swaps!) \(swapInfo.margin!)\n"
             csvText.append(swapDetail)
         }
         

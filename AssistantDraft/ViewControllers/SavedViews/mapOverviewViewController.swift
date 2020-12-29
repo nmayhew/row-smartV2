@@ -81,10 +81,19 @@ class mapOverviewViewController: UIViewController,MKMapViewDelegate {
         }
         
         region = regionTemp
-        mapView.setRegion(region!, animated: true)
+        mapView.setRegion(region!, animated: false)
+        zoomOut()
         overlayCreator(locationsArr: locationsArr)
     }
     
+    func zoomOut() {
+        var region: MKCoordinateRegion = self.mapView.region
+        var span: MKCoordinateSpan = mapView.region.span
+        span.latitudeDelta *= 2
+        span.longitudeDelta *= 2
+        region.span = span
+        mapView.setRegion(region, animated: false)
+    }
     //Creates line between GPS locations (route of training session)
     private func overlayCreator(locationsArr: [Location]) {
         for index in stride(from: 0, to: locationsArr.count - 2, by: 1) {

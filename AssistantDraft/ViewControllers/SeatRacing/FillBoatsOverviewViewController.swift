@@ -24,7 +24,7 @@ class FillBoatsOverviewViewController: UIViewController, sendRowers, ReadyToSend
         for boat in seatRaceBoats! {
             boatsFilledDict[boat] = false
         }
-        finished.layer.cornerRadius = 5.0
+        finished.layer.cornerRadius = Constants.CORNERRAD
     }
     
     

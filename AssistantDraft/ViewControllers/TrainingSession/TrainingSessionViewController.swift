@@ -98,9 +98,9 @@ class TrainingSessionViewController: UIViewController, sendNotes, sendPieces, pi
         SPM.setTitleColor(UIColor.white, for: .normal)
         SPM.setTitleColor(UIColor.white, for: .selected)
         SPM.backgroundColor = UIColor.init(rgb: 0xFF7417)
-        SPM.layer.cornerRadius = 5.0
-        startButton.layer.cornerRadius = 5.0
-        stopButton.layer.cornerRadius = 5.0
+        SPM.layer.cornerRadius = Constants.CORNERRAD
+        startButton.layer.cornerRadius = Constants.CORNERRAD
+        stopButton.layer.cornerRadius = Constants.CORNERRAD
         
         
     }
@@ -282,7 +282,7 @@ class TrainingSessionViewController: UIViewController, sendNotes, sendPieces, pi
         locationManager.delegate = self
         locationManager.allowsBackgroundLocationUpdates = true
         locationManager.activityType = .fitness
-        locationManager.distanceFilter = 7
+        locationManager.distanceFilter = 3.5
         locationManager.startUpdatingLocation()
         locationManager.startUpdatingHeading()
     }

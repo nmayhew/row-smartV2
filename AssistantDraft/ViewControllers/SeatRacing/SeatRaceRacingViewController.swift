@@ -363,7 +363,7 @@ class RacingSeatRaceViewController: UIViewController, UICollectionViewDelegate, 
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "rateMonitor", for: indexPath) as! RateMonitorCollectionViewCell
             cell.backgroundColor = UIColor.init(rgb: 0xFF7417)
             cell.rateMonitor.textColor = UIColor.white
-            cell.layer.cornerRadius = 5.0
+            cell.layer.cornerRadius = Constants.CORNERRAD
             cell.layer.shadowColor = UIColor.lightGray.cgColor
             cell.layer.shadowOpacity = 0.8
             cell.layer.shadowOffset = CGSize(width: 0, height: 4.0)
@@ -373,7 +373,7 @@ class RacingSeatRaceViewController: UIViewController, UICollectionViewDelegate, 
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CollectionViewCell
         
-        cell.layer.cornerRadius = 5.0
+        cell.layer.cornerRadius = Constants.CORNERRAD
         
         cell.layer.shadowColor = UIColor.lightGray.cgColor
         cell.layer.shadowOpacity = 0.8

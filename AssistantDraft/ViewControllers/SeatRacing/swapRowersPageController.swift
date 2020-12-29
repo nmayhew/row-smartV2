@@ -87,7 +87,7 @@ class swapRowers: UIPageViewController, UIPageViewControllerDelegate, UIPageView
     func buildEight(boat: SeatRaceBoat) -> UIViewController {
         let newView = self.newViewContr(viewController: "EightSwap") as! EightSwapViewController
         newView.boat = boat
-        newView.view.layer.cornerRadius = 5.0
+        newView.view.layer.cornerRadius = Constants.CORNERRAD
         newView.delegate = parentController
         return newView
     }
@@ -96,28 +96,28 @@ class swapRowers: UIPageViewController, UIPageViewControllerDelegate, UIPageView
         let newView = self.newViewContr(viewController: "CoxedFourSwap") as! CoxedFourSwapViewController
         newView.boat = boat
         newView.delegate = parentController
-        newView.view.layer.cornerRadius = 5.0
+        newView.view.layer.cornerRadius = Constants.CORNERRAD
         return newView
     }
     func buildCoxlessFour(boat: SeatRaceBoat) -> UIViewController {
         let newView = self.newViewContr(viewController: "CoxlessFourSwap") as! CoxlessFourSwapViewController
         newView.boat = boat
         newView.delegate = parentController
-        newView.view.layer.cornerRadius = 5.0
+        newView.view.layer.cornerRadius = Constants.CORNERRAD
         return newView
     }
     func buildPair(boat: SeatRaceBoat) -> UIViewController {
         let newView = self.newViewContr(viewController: "PairSwap") as! PairSwapViewController
         newView.boat = boat
         newView.delegate = parentController
-        newView.view.layer.cornerRadius = 5.0
+        newView.view.layer.cornerRadius = Constants.CORNERRAD
         return newView
     }
     func buildSingle(boat: SeatRaceBoat) -> UIViewController {
         let newView = self.newViewContr(viewController: "SingleSwap") as! SingleSwapViewController
         newView.boat = boat
         newView.delegate = parentController
-        newView.view.layer.cornerRadius = 5.0
+        newView.view.layer.cornerRadius = Constants.CORNERRAD
         return newView
     }
     

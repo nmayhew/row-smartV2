@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1924640814F02293F8BA3161 /* Pods_AssistantDraft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77835C68785E2FDB1B12B533 /* Pods_AssistantDraft.framework */; };
 		620C5E602322B7A700657E94 /* varFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C5E5E2322B7A700657E94 /* varFormatter.swift */; };
 		620C5E612322B7A700657E94 /* customAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C5E5F2322B7A700657E94 /* customAnnotation.swift */; };
+		6211614B2599FC9D00365787 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6211614A2599FC9D00365787 /* Constants.swift */; };
 		622808C62458AF5600762867 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622808C52458AF5600762867 /* TeamViewController.swift */; };
 		6236E3BF22DE3BD400E44D56 /* SavedSessionsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236E3BE22DE3BD400E44D56 /* SavedSessionsDetailsViewController.swift */; };
 		6236E3C422DE3D7900E44D56 /* SaveSessionPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236E3C322DE3D7900E44D56 /* SaveSessionPageViewController.swift */; };
@@ -111,6 +112,7 @@
 		5583D77FF4B89350D9DD8DB8 /* Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig"; path = "Target Support Files/Pods-AssistantDraft-AssistantDraftUITests/Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		620C5E5E2322B7A700657E94 /* varFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = varFormatter.swift; sourceTree = "<group>"; };
 		620C5E5F2322B7A700657E94 /* customAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customAnnotation.swift; sourceTree = "<group>"; };
+		6211614A2599FC9D00365787 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		622808C42458884F00762867 /* AssistantDraft.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AssistantDraft.entitlements; sourceTree = "<group>"; };
 		622808C52458AF5600762867 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		6236E3BE22DE3BD400E44D56 /* SavedSessionsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSessionsDetailsViewController.swift; sourceTree = "<group>"; };
@@ -338,13 +340,13 @@
 		62C78EAC2316735D0053A149 /* HomeViews */ = {
 			isa = PBXGroup;
 			children = (
-				622808C52458AF5600762867 /* TeamViewController.swift */,
 				62E5F3D92309903A00DB81C3 /* NavController.swift */,
 				62CB39B02317FC43003C7F00 /* HomeViewController2nd.swift */,
 				62C78EAF2316739E0053A149 /* parentHomeViewController.swift */,
 				62C78EAA231673420053A149 /* SeatRaceHomeViewController.swift */,
 				62C78EAD2316737C0053A149 /* RaceHomeViewController.swift */,
 				62C78EB1231673AB0053A149 /* TraininSessionHomeViewController.swift */,
+				622808C52458AF5600762867 /* TeamViewController.swift */,
 			);
 			path = HomeViews;
 			sourceTree = "<group>";
@@ -418,6 +420,7 @@
 				62DB050322DF27B400492E39 /* MulticolorPolyline.swift */,
 				626F7BA622FB407000C62DCE /* uicolorExtension.swift */,
 				626F7BAA22FC155E00C62DCE /* animationPopUPClass.swift */,
+				6211614A2599FC9D00365787 /* Constants.swift */,
 			);
 			path = HelperFiles;
 			sourceTree = "<group>";
@@ -444,7 +447,6 @@
 				5583D77FF4B89350D9DD8DB8 /* Pods-AssistantDraft-AssistantDraftUITests.debug.xcconfig */,
 				7DD6F392C731D416AF38CB69 /* Pods-AssistantDraft-AssistantDraftUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -671,6 +673,7 @@
 				62C8FD1F22F03D6A00974B55 /* InitialSeatRaceCreatorViewController.swift in Sources */,
 				62CB39B12317FC43003C7F00 /* HomeViewController2nd.swift in Sources */,
 				62656496246472F500596C61 /* Location+CoreDataClass.swift in Sources */,
+				6211614B2599FC9D00365787 /* Constants.swift in Sources */,
 				622808C62458AF5600762867 /* TeamViewController.swift in Sources */,
 				62A7C32022D482CE00BAE458 /* SplitViewController.swift in Sources */,
 				62E2833222E4BBE100129726 /* addBoatPopUpViewController.swift in Sources */,

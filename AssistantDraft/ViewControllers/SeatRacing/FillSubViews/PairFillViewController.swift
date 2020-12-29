@@ -34,7 +34,7 @@ class PairFillViewController: parentBoat {
         let failedTextViews = validationFun.validate(textViewsArray)
         for textView in failedTextViews {
             textView.layer.borderColor = UIColor.red.cgColor
-            textView.layer.cornerRadius = 4.0
+            textView.layer.cornerRadius = Constants.CORNERRAD
             textView.layer.borderWidth = 1.0
         }
         if (failedTextViews.isEmpty) {

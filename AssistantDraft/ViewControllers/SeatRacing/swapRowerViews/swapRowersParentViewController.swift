@@ -70,7 +70,7 @@ class swapRowersParentViewController: UIViewController, UIGestureRecognizerDeleg
         for button in buttons {
             button.layer.borderColor = UIColor.lightGray.cgColor;
             button.layer.borderWidth = 2.0;
-            button.layer.cornerRadius = 5.0
+            button.layer.cornerRadius = Constants.CORNERRAD
             let colour = UIColor.white
             button.setTitleColor(colour.withAlphaComponent(0.5), for: .disabled)
         }

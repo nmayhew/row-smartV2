@@ -31,7 +31,7 @@ extension UIColor {
 extension UITableView {
     //Uniform round corners on table
     func roundCorners() {
-        self.layer.cornerRadius = 5.0
+        self.layer.cornerRadius = Constants.CORNERRAD
         self.layer.masksToBounds = true
     }
 }
