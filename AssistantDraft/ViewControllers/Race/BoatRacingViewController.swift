@@ -200,7 +200,7 @@ class RacingBoatViewController: UIViewController, UICollectionViewDelegate, UICo
         }
         
         if (allFinished) {
-            let alert = UIAlertController(title: "Finished Race", message: "Please select if you want to finish racing or want to save and repeat the race.", preferredStyle: .actionSheet)
+            let alert = UIAlertController(title: "Finished Race", message: "Please select if you want to finish racing or if you want to save and repeat the race.", preferredStyle: .actionSheet)
             alert.addAction(UIAlertAction(title: "Repeat", style: .default, handler: { (_) in
                 self.addCurrTimes()
             }))

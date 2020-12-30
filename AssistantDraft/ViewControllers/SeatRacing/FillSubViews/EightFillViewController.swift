@@ -27,13 +27,18 @@ class EightFillViewController: parentBoat {
         boatName.text = boat?.boatName
         
         setDelegates(textFields: [bow,two,three,four,five,six,seve,stroke,cox], boatLabel: boatName)
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
         registerForKeyboardNotifications()
+        super.viewDidAppear(animated)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         deregisterFromKeyboardNotifications()
     }
+
     
     @objc func sendRowers() {
         if (!sent) {
@@ -58,7 +63,9 @@ class EightFillViewController: parentBoat {
         self.delegateShouldSend?.ready(ready: full, boat: boat!)
     }
     
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
     
     
     //MARK: Scroll for Keyboard
@@ -81,10 +88,20 @@ class EightFillViewController: parentBoat {
         }
     }
     
-    
+    /*func keyboardHide() {
+        u
+        let keyboardSize = (UIResponder.keyboardFrameBeginUserInfoKey as? NSValue)?.cgRectValue.size
+        let contentInsets : UIEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: -keyboardSize!.height, right: 0.0)
+        self.scrollView.contentInset = contentInsets
+        self.scrollView.scrollIndicatorInsets = contentInsets
+        self.view.endEditing(true)
+        self.scrollView.isScrollEnabled = false
+    *///}
     @objc func keyboardWillBeHidden(notification: NSNotification) {
         //Once keyboard disappears, restore original positions
+        
         let info : NSDictionary = notification.userInfo! as NSDictionary
+     
         let keyboardSize = (info[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue.size
         let contentInsets : UIEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: -keyboardSize!.height, right: 0.0)
         self.scrollView.contentInset = contentInsets

@@ -39,6 +39,16 @@ class parentBoat: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        if (activeField != nil) {
+            activeField?.resignFirstResponder()
+            activeField = nil
+        }
+        super.viewWillDisappear(animated)
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        
+    }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         activeField = textField

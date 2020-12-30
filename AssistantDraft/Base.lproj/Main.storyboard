@@ -403,6 +403,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="VgV-HM-4Vh"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <state key="normal" title="Close"/>
                                         <connections>
                                             <action selector="close:" destination="Z1V-3J-l3W" eventType="touchUpInside" id="th7-oH-sr8"/>

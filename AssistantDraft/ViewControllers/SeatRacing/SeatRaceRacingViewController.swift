@@ -259,7 +259,7 @@ class RacingSeatRaceViewController: UIViewController, UICollectionViewDelegate, 
             }
         }
         if (allFinished && raceNo > 1) {
-            let alert = UIAlertController(title: "Finished Seat Race", message: "Please select if you want to finish or want to perform another swap.", preferredStyle: .actionSheet)
+            let alert = UIAlertController(title: "Finished Seat Race", message: "Please select if you want to finish or if you want to perform another seat race.", preferredStyle: .actionSheet)
             alert.addAction(UIAlertAction(title: "Swap", style: .default, handler: { (_) in
                 //Take lineups in most recent seatRactBoat (largest race number is sort Descriptor)
                 self.addCurrTimes()
