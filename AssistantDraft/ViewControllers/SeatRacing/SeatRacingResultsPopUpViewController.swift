@@ -387,7 +387,7 @@ class SeatRacingPopUpViewController: popUPViewController ,UITableViewDataSource,
     func seatRaceResults() -> String {
         var csvText = ""
         for raceIndex in 1...lowestRaceCountFunc() {
-            let csvSeatRaceHeadline = "Race \(raceIndex):,Lineup:, Time:, Average Split:, % Gold Medal Time:\n"
+            let csvSeatRaceHeadline = "Race \(raceIndex):,Lineups:, Time:, Average Split:, % Gold Medal Time:\n"
             csvText.append(csvSeatRaceHeadline)
             for boat in seatRaceBoats {
                 //Race Results

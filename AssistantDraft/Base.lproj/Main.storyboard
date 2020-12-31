@@ -1650,16 +1650,16 @@
                                 <rect key="frame" x="8" y="96" width="359" height="70"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7N2-oT-Ws1">
-                                        <rect key="frame" x="0.0" y="0.0" width="205.66666666666666" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="183.33333333333334" height="70"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j0-OV-jsx">
-                                                <rect key="frame" x="0.0" y="0.0" width="205.66666666666666" height="35"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="183.33333333333334" height="35"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Distance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ij8-0C-hJD">
-                                                <rect key="frame" x="0.0" y="35" width="205.66666666666666" height="35"/>
+                                                <rect key="frame" x="0.0" y="35" width="183.33333333333334" height="35"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1667,8 +1667,9 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flg-Yg-fZg">
-                                        <rect key="frame" x="205.66666666666663" y="0.0" width="153.33333333333337" height="70"/>
+                                        <rect key="frame" x="183.33333333333337" y="0.0" width="175.66666666666663" height="70"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <state key="normal" title="End Session">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
