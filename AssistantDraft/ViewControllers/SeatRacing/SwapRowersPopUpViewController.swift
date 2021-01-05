@@ -19,6 +19,7 @@ class SwapRowersOverviewViewController: popUPViewController, sendSwap, resultsPo
     var pageControl = UIPageControl()
     var firstMove = true
     var currRower: Rower?
+    var currBoat: SeatRaceBoat?
     var raceNo: Int?
     var seatRaceBoats: [SeatRaceBoat] = []
     var swapsXforY: [Rower:Rower] = [:]
@@ -81,6 +82,7 @@ class SwapRowersOverviewViewController: popUPViewController, sendSwap, resultsPo
         if (firstMove) {
             swapLabel.text = "Swap \(rower.name!) for ..."
             currRower = rower
+            currBoat = boat
             firstMove = false
         } else {
             if ((currRower!.isEqual(rower))) {
@@ -88,6 +90,15 @@ class SwapRowersOverviewViewController: popUPViewController, sendSwap, resultsPo
                 firstMove = true
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: "cancelSwaps"), object: nil)
                 swapLabel.text = "Swap..."
+            } else if (currBoat!.isEqual(boat)) {
+                firstMove = true
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "cancelSwaps"), object: nil)
+                swapLabel.text = "Swap..."
+                let alertController = UIAlertController(title: "Swapping Error", message: "You can't swap two people from the same boat.", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default)
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true, completion: nil)
+                
             } else {
                 swapLabel.text = "Swap \(currRower!.name!) for \(rower.name!)"
                 swapsXforY[rower] = currRower
