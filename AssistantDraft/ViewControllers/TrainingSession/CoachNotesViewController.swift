@@ -30,7 +30,7 @@ class CoachNotesViewController: UIViewController, UITextViewDelegate {
         CoachNotesView.layer.cornerRadius = Constants.CORNERRAD
         CoachNotesView.isScrollEnabled = true
         CoachNotesView.delegate = self
-        CoachNotesView.text = "Coaches' Notes"
+        CoachNotesView.text = "Coach's Notes"
         CoachNotesView.textColor = UIColor.lightGray
         CoachNotesView.selectedTextRange = CoachNotesView.textRange(from: CoachNotesView.beginningOfDocument, to: CoachNotesView.beginningOfDocument)
         CoachNotesView.tintColor = .systemBlue
@@ -104,7 +104,7 @@ class CoachNotesViewController: UIViewController, UITextViewDelegate {
         // and set the cursor to the beginning of the text view
         if updatedText.isEmpty {
             
-            CoachNotesView.text = "Coaches' Notes"
+            CoachNotesView.text = "Coach's Notes"
             CoachNotesView.textColor = UIColor.lightGray
             
             CoachNotesView.selectedTextRange = CoachNotesView.textRange(from: CoachNotesView.beginningOfDocument, to: CoachNotesView.beginningOfDocument)

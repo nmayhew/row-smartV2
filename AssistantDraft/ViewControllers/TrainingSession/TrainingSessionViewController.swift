@@ -136,7 +136,7 @@ class TrainingSessionViewController: UIViewController, sendNotes, sendPieces, pi
     }
     
     func sendNotes(notes: String) {
-        if (notes == "Coaches' Notes" || notes == "") {
+        if (notes == "Coach's Notes" || notes == "") {
             coachNotes = "No notes entered"
         } else {
             coachNotes = notes
