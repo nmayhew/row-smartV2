@@ -219,7 +219,7 @@ class PiecesViewController: UIViewController, UITableViewDataSource, UITableView
         if (run) {
             runSeconds += 1
             let formattedRunTime = varFormatter.time(runSeconds)
-            runTime.text = "Length \(formattedRunTime)"
+            runTime.text = "Length: \(formattedRunTime)"
         } else {
             restSeconds += 1
             let formattedRestTime = varFormatter.time(restSeconds)

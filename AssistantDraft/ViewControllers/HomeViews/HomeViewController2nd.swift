@@ -11,7 +11,7 @@ import UIKit
 class HomeViewController2nd: UITabBarController {
 
     @IBOutlet weak var myTabBar: UITabBar!
-    var index = 0
+    var index = 2
     
     override func viewDidLoad() {
         super.viewDidLoad()
